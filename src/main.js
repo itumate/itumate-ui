@@ -18,6 +18,9 @@ import 'animate.css';
 import App from './App';
 import router from './router';
 
+// filter
+import {currency} from './filter/currency';
+
 Vue.config.productionTip = false;
 
 Vue.use(ElementUI);
@@ -26,6 +29,8 @@ Vue.use(VueInsProgressBar, {
   show: true,
   height: '5px'
 });
+
+Vue.filter('currency', currency);
 
 new Vue({
   el: '#app',
