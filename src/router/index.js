@@ -3,7 +3,7 @@ import Router from 'vue-router'
 
 import Home from "@/components/Home";
 import HelloWorld from '@/components/HelloWorld';
-import Git from "../components/Git";
+import Git from "@/components/Git";
 
 Vue.use(Router);
 
