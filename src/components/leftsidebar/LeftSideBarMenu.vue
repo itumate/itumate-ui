@@ -1,3 +1,40 @@
+<!--
+    左侧边栏实现
+
+    LeftSideBarMenuDir: 目录(父级菜单)级别组件
+    LeftSideBarMenuItem: 菜单级别组件
+
+    菜单栏数据属性:
+
+    id: 菜单ID,
+    label: 菜单名称
+    isLeaf: true叶子节点, false目录节点
+    icon: 菜单图标Icon, JSON 格式
+    children: 子级菜单, isLeaf为true时无该属性
+    icon.isElement: true(来自ElementUI Icon), false(来自 font-awesome)
+    icon.class: ElementUI 或 font-awesome icon ClassName
+
+    菜单栏示例数据:
+
+    [{
+      id: 1,
+      label: '菜单名称',
+      isLeaf: false,
+      icon: {
+          isElement: true,
+          class: classname
+      },
+      children:[{}]
+    },{
+      id: 2,
+      label: '菜单名称',
+      isLeaf: true,
+      icon: {
+          isElement: false,
+          class: classname
+      },
+    }]
+-->
 <template>
   <div class="lsm-container" :style="{width: sideBarWidth + 'px'}">
     <div class="lsm-expand-btn">
@@ -14,40 +51,55 @@
       </div>
     </div>
     <el-menu
+      class="lsm-menu"
+      text-color="#fff"
+      background-color="#263445"
+      active-text-color="#409EFF"
+      :router="true"
       @open="handleOpen"
       @close="handleClose"
-      :collapse="isCollapse"
       :unique-opened="true"
+      :collapse="isCollapse"
       :collapse-transition="true"
-      background-color="#263445"
-      text-color="#fff"
-      active-text-color="#409EFF"
-      class="lsm-menu"
-      :router="true">
-      <left-side-bar-menu-item></left-side-bar-menu-item>
+      :default-active="this.$route.path">
+      <template v-for="(menuItem) in menuItemList">
+        <left-side-bar-menu-dir v-if="!menuItem.isLeaf" :menuItem="menuItem"></left-side-bar-menu-dir>
+        <left-side-bar-menu-item v-if="menuItem.isLeaf" :menuItem="menuItem"></left-side-bar-menu-item>
+      </template>
     </el-menu>
   </div>
 </template>
 
 <script>
     import {TweenLite} from 'gsap';
-    import LeftSideBarMenuItem from "./LeftSideBarMenuItem";
+
+    import LeftSideBarMenuDir from './LeftSideBarMenuDir';
+    import LeftSideBarMenuItem from './LeftSideBarMenuItem';
 
     export default {
         name: 'LeftSideBarMenu',
+        props: {
+            menuItemList: {
+                type: Array,
+                required: true
+            }
+        },
         data() {
             return {
                 isCollapse: false,
-                sideBarWidth: 220,
-                minSideBarWidth: 64,
-                maxSideBarWidth: 220,
-                collapseDuration: 0.5
+                sideBarWidth: 220,    // 默认为最大宽度
+                minSideBarWidth: 64,  // 菜单栏最小宽度(收缩)
+                maxSideBarWidth: 220, // 菜单栏最大宽度(展开)
+                collapseDuration: 0.5 // 菜单栏收缩时长(秒)
             };
         },
         components: {
+            LeftSideBarMenuDir,
             LeftSideBarMenuItem
         },
         mounted() {
+        },
+        created() {
         },
         methods: {
             handleOpen(key, keyPath) {
@@ -56,7 +108,7 @@
             handleClose(key, keyPath) {
                 console.log(key, keyPath);
             },
-            expandToggle() {
+            expandToggle() { // 收缩菜单
                 TweenLite.to(this.$data, this.collapseDuration, {
                     sideBarWidth:
                         this.sideBarWidth === this.maxSideBarWidth

@@ -1,98 +1,39 @@
+<!--
+    左侧边栏菜单实现, 具体说明见 LeftSideBarMenu 组件. 下面是示例数据:
+
+    menuItem: {
+      id: 1,
+      label: '菜单名称',
+      isLeaf: true,  // true叶子节点, false目录节点
+      icon: {
+          isElement: true(来自ElementUI Icon), false(来自 font-awesome),
+          class: classname (ElementUI 或 font-awesome icon Class)
+      }
+    }
+-->
 <template>
-  <div>
-    <el-submenu index="1">
-      <template slot="title">
-        <i class="el-icon-location"></i>
-        <span slot="title">导航一</span>
-      </template>
-      <el-submenu index="1-4" class="animated slideInRight">
-        <template slot="title">
-          <i class="fa fa-fw fa-lg fa-connectdevelop"></i>
-          <span slot="title">开发</span>
-        </template>
-        <el-menu-item index="/git" class="waves waves-effect animated rollIn">
-          <template slot="title">
-            <i class="fa fa-fw fa-lg fa-git"></i>
-            <span slot="title">Git</span>
-          </template>
-        </el-menu-item>
-        <el-menu-item index="/helloWorld" class="waves-effect animated rollIn">HelloWorld</el-menu-item>
-        <el-menu-item index="1-3" class="waves-effect animated rollIn">选项3</el-menu-item>
-        <el-menu-item index="1-4-1" class="waves-effect animated rollIn">选项4-1</el-menu-item>
-      </el-submenu>
-    </el-submenu>
-    <el-menu-item index="2" class="waves waves-effect">
-      <i class="el-icon-menu"></i>
-      <span slot="title">导航二</span>
-    </el-menu-item>
-    <el-menu-item index="3" class="waves waves-effect">
-      <i class="el-icon-document"></i>
-      <span slot="title">导航三</span>
-    </el-menu-item>
-    <el-menu-item index="4" class="waves waves-effect">
-      <i class="el-icon-setting"></i>
-      <span slot="title">导航四</span>
-    </el-menu-item>
-    <el-menu-item index="5" class="waves waves-effect">
-      <i class="el-icon-setting"></i>
-      <span slot="title">导航四</span>
-    </el-menu-item>
-    <el-menu-item index="6" class="waves waves-effect">
-      <i class="el-icon-setting"></i>
-      <span slot="title">导航四</span>
-    </el-menu-item>
-    <el-menu-item index="7" class="waves waves-effect">
-      <i class="el-icon-setting"></i>
-      <span slot="title">导航四</span>
-    </el-menu-item>
-    <el-menu-item index="8" class="waves waves-effect">
-      <i class="el-icon-setting"></i>
-      <span slot="title">导航四</span>
-    </el-menu-item>
-    <el-menu-item index="9" class="waves waves-effect">
-      <i class="el-icon-setting"></i>
-      <span slot="title">导航四</span>
-    </el-menu-item>
-    <el-menu-item index="10" class="waves waves-effect">
-      <i class="el-icon-setting"></i>
-      <span slot="title">导航四</span>
-    </el-menu-item>
-    <el-menu-item index="11" class="waves waves-effect">
-      <i class="el-icon-setting"></i>
-      <span slot="title">导航四</span>
-    </el-menu-item>
-    <el-menu-item index="12" class="waves waves-effect">
-      <i class="el-icon-setting"></i>
-      <span slot="title">导航四</span>
-    </el-menu-item>
-    <el-menu-item index="13" class="waves waves-effect">
-      <i class="el-icon-setting"></i>
-      <span slot="title">导航四</span>
-    </el-menu-item>
-    <el-menu-item index="14" class="waves waves-effect">
-      <i class="el-icon-setting"></i>
-      <span slot="title">导航四</span>
-    </el-menu-item>
-    <el-menu-item index="15" class="waves waves-effect">
-      <i class="el-icon-setting"></i>
-      <span slot="title">导航四</span>
-    </el-menu-item>
-    <el-menu-item index="16" class="waves waves-effect">
-      <i class="el-icon-setting"></i>
-      <span slot="title">导航四</span>
-    </el-menu-item>
-    <el-menu-item index="17" class="waves waves-effect">
-      <i class="el-icon-setting"></i>
-      <span slot="title">导航四</span>
-    </el-menu-item>
-  </div>
+  <el-menu-item :index="menuItem.path" class="waves waves-effect animated" :class="menuItem.animated">
+    <template>
+      <i v-if="menuItem.icon.isElement" :class="menuItem.icon.class"></i>
+      <i v-else class="fa fa-fw fa-lg" :class="menuItem.icon.class"></i>
+      <span slot="title">{{ menuItem.label }}</span>
+    </template>
+  </el-menu-item>
 </template>
 
 <script>
     export default {
-        name: "LeftSideBarMenuItem",
+        name: 'LeftSideBarMenuItem',
+        props: {
+            menuItem: {
+                type: Object,
+                required: true
+            }
+        },
         data() {
             return {};
+        },
+        created() {
         },
         mounted() {
         },
@@ -104,10 +45,5 @@
   /* 菜单激活背景色 */
   .el-menu-item.is-active {
     background-color: rgb(30, 42, 55) !important;
-  }
-
-  /* 菜单文本标题左填充(ICON留白) */
-  .el-submenu__title > span {
-    padding-left: 10px !important;
   }
 </style>

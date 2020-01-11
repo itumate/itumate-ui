@@ -10,7 +10,7 @@
      * $insProgress: 彩虹进度条
      */
 
-    import Home from "./components/Home";
+    import Home from './components/Home';
 
     export default {
         name: 'App',
