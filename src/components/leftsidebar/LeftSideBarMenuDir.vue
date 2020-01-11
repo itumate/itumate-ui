@@ -13,7 +13,7 @@
     }
 -->
 <template>
-  <el-submenu>
+  <el-submenu :index="menuItem.id + ''">
     <template slot="title">
       <i v-if="menuItem.icon.isElement" :class="menuItem.icon.class"></i>
       <i v-else class="fa fa-fw fa-lg" :class="menuItem.icon.class"></i>

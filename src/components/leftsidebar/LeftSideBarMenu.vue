@@ -73,8 +73,8 @@
 <script>
     import {TweenLite} from 'gsap';
 
-    import LeftSideBarMenuDir from './LeftSideBarMenuDir';
-    import LeftSideBarMenuItem from './LeftSideBarMenuItem';
+    import LeftSideBarMenuDir from "./LeftSideBarMenuDir";
+    import LeftSideBarMenuItem from "./LeftSideBarMenuItem";
 
     export default {
         name: 'LeftSideBarMenu',

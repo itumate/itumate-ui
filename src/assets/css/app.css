@@ -23,7 +23,6 @@ html, body {
   line-height: 1.42857143;
   background-color: transparent;
   -webkit-font-smoothing: antialiased;
-  font-family: Monaco, Consola, Monospaced;
 }
 
 * {
