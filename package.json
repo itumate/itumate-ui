@@ -4,6 +4,12 @@
   "description": "itumate web ui",
   "author": "MinGRn97 <MinGRn97@gmail.com>",
   "private": true,
+  "bugs": "https://github.com/itumate/itumate-ui/issues",
+  "homepage": "https://github.com/itumate/itumate-ui/wiki",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itumate/itumate-ui.git"
+  },
   "scripts": {
     "dev": "webpack-dev-server --config build/webpack.dev.conf.js",
     "start": "npm run dev",
