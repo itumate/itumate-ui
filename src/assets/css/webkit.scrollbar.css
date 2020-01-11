@@ -1,0 +1,32 @@
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 4px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    /*background: rgba(223,240,216,1);*/
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);*/
+    -webkit-box-shadow: inset 0 0 6px #7793a7;
+}
+
+/* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+::-webkit-scrollbar-corner {
+  -webkit-box-shadow: inset 0 0 6px #7793a7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(225, 246, 143, .3);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(225, 246, 143, .3);
+}
