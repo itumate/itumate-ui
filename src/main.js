@@ -4,8 +4,18 @@ import Vue from 'vue';
 import ElementUI from 'element-ui';
 
 // style
+import './assets/css/webkit.scrollbar.css';
 import './assets/css/app.css';
-import 'element-ui/lib/theme-chalk/index.css';
+import './assets/theme/index.css';
+
+
+// waves 效果
+import 'materialize-css/dist/css/materialize.min.css'
+import 'materialize-css/dist/js/materialize.min'
+
+// font-awesome
+import 'font-awesome/css/font-awesome.min.css'
+import 'animate.css'
 
 import App from './App'
 import router from './router'
@@ -14,7 +24,6 @@ Vue.config.productionTip = false;
 
 Vue.use(ElementUI);
 
-/* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,

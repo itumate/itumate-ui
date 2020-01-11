@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 import Home from "@/components/Home";
 import HelloWorld from '@/components/HelloWorld';
+import Git from "../components/Git";
 
 Vue.use(Router);
 
@@ -14,14 +15,18 @@ export default new Router({
       mate: {title: '首页'},
       direction: '/home',
       children: [{
-        path: "/home",
+        path: "home",
         name: 'home',
         component: Home,
-      }, {
-        path: '/helloWorld',
-        name: 'HelloWorld',
-        component: HelloWorld
       }]
+    }, {
+      path: '/helloWorld',
+      name: 'HelloWorld',
+      component: HelloWorld
+    }, {
+      path: '/git',
+      name: 'Git',
+      component: Git
     }
   ]
-})
+});

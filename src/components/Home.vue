@@ -1,50 +1,37 @@
 <template>
-  <div class="app-wrapper">
-    <el-header style="background: #42b983">
-      这是头
-    </el-header>
-    <el-container class="app-container" style="background: antiquewhite">
-        <LeftSideBarNav class="sidebar"></LeftSideBarNav>
+  <el-container class="app-wrapper">
+    <el-aside class="app-aside">
+      <left-side-bar-menu></left-side-bar-menu>
+    </el-aside>
+    <el-container>
+      <el-header class="app-header">
+        这是 header
+      </el-header>
+      <el-main class="app-main">
+        <transition enter-active-class="animated fadeInLeft">
+          <keep-alive>
+            <router-view></router-view>
+          </keep-alive>
+        </transition>
+      </el-main>
+      <el-footer class="app-footer">
+        <small class="text-muted">技术支持：某某某某某某  |  某某某某某某<br>服务热线：000-000-000</small>
+      </el-footer>
     </el-container>
-    <el-footer style="background: cadetblue">
-      这是页脚
-    </el-footer>
-  </div>
+  </el-container>
 </template>
-
 <script>
 
-  import LeftSideBarNav from "./LeftSideBarNav";
+    import LeftSideBarMenu from "./leftsidebar/LeftSideBarMenu";
 
     export default {
-        name: "Home",
+        name: 'Home',
         components: {
-            LeftSideBarNav
+            LeftSideBarMenu
         }
     }
 </script>
 
 <style scoped>
-
-  .sidebar {
-    height: 100%;
-    overflow: hidden;
-    overflow-y: auto;
-  }
-
-  .app-wrapper {
-    height: 100%;
-  }
-
-  .app-container {
-    width: 100%;
-    height: calc(100% - 120px);
-  }
-
-  .app-aside, .app-main {
-    overflow: auto;
-  }
-
-  .app-aside {
-  }
+  @import "./../assets/css/animate.css";
 </style>
