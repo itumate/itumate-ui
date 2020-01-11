@@ -1,10 +1,14 @@
 <template>
   <div id="app">
     <Home></Home>
+    <vue-ins-progress-bar></vue-ins-progress-bar>
   </div>
 </template>
 
 <script>
+    /**
+     * $insProgress: 彩虹进度条
+     */
 
     import Home from "./components/Home";
 
@@ -12,6 +16,20 @@
         name: 'App',
         components: {
             Home
+        },
+        mounted() {
+            this.$insProgress.finish();
+        },
+        created() {
+            this.$insProgress.start();
+            this.$router.beforeEach((to, from, next) => {
+                this.$insProgress.start();
+                next();
+            });
+
+            this.$router.afterEach((to, from) => {
+                this.$insProgress.finish()
+            })
         }
     }
 </script>
