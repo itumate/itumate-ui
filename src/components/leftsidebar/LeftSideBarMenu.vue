@@ -51,7 +51,7 @@
       </div>
     </div>
     <el-menu
-      class="lsm-menu"
+      class="lsm-menu scroll-bar"
       text-color="#fff"
       background-color="#263445"
       active-text-color="#409EFF"
@@ -139,16 +139,12 @@
   /* 菜单 */
   .lsm-menu {
     overflow: hidden;
+    overflow-y: auto;
     border-right: none !important;
     height: calc(100% - 65px) !important;
     text-align: left;
     white-space: nowrap;
     text-overflow: ellipsis;
-    /*overflow-y: auto;*/ /* hover 时显示*/
-  }
-
-  .lsm-menu:hover {
-    overflow-y: auto;
   }
 
   /* ----------- 以下是菜单收缩按钮以及动画 ----------- */

@@ -1,20 +1,21 @@
 <template>
   <el-container class="app-wrapper">
-    <el-aside class="app-aside">
+    <el-aside class="lsm">
       <left-side-bar-menu :menuItemList="menuItemList"></left-side-bar-menu>
     </el-aside>
     <el-container>
-      <el-header class="app-header">
+      <el-header>
         这是 header
       </el-header>
-      <el-main class="app-main">
+      <breadcrumb-nav></breadcrumb-nav>
+      <el-main>
         <transition enter-active-class="animated fadeInLeft">
           <keep-alive>
             <router-view></router-view>
           </keep-alive>
         </transition>
       </el-main>
-      <el-footer class="app-footer">
+      <el-footer>
         <small class="text-muted">技术支持：某某某某某某 | 某某某某某某<br>服务热线：000-000-000</small>
       </el-footer>
     </el-container>
@@ -23,24 +24,37 @@
 <script>
 
     import LeftSideBarMenu from './leftsidebar/LeftSideBarMenu';
+    import BreadcrumbNav from "./nav/BreadcrumbNav";
 
     export default {
         name: 'Home',
         components: {
-            LeftSideBarMenu
+            LeftSideBarMenu,
+            BreadcrumbNav
         },
         data() {
             return {
                 menuItemList: [{
                     id: 1,
-                    label: '系统设置',
+                    label: '首页',
                     animated: 'fadeIn',
                     isLeaf: false,
+                    path: '/home',
                     icon: {
                         isElement: true,
                         class: 'el-icon-setting'
                     },
                     children: [{
+                        id: 2,
+                        label: '你好, 世界',
+                        animated: 'tada',
+                        isLeaf: true,
+                        path: '/helloWorld',
+                        icon: {
+                            isElement: false,
+                            class: 'fa-connectdevelop'
+                        }
+                    },{
                         id: 10,
                         label: 'Git',
                         animated: 'fadeIn',
@@ -93,10 +107,10 @@
                     }]
                 },{
                     id: 2,
-                    label: '你好, 世界',
+                    label: '菜单',
                     animated: 'tada',
                     isLeaf: true,
-                    path: '/helloWorld',
+                    path: '/menu',
                     icon: {
                         isElement: false,
                         class: 'fa-connectdevelop'
@@ -109,4 +123,8 @@
 
 <style scoped>
   @import "./../assets/css/animate.css";
+
+  main {
+    padding: 10px;
+  }
 </style>
