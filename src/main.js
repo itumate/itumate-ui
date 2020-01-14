@@ -1,15 +1,11 @@
 import Vue from 'vue';
 import ElementUI from 'element-ui';
 import VueInsProgressBar from "vue-ins-progress-bar";
-import BootstrapVue  from 'bootstrap-vue';
 
 // style
 import './assets/css/app.css';
-import './assets/css/webkit.scrollbar.css';
-
 import './assets/css/theme/index.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-vue/dist/bootstrap-vue.css';
+import './assets/css/webkit.scrollbar.css';
 
 // waves 效果
 import 'materialize-css/dist/js/materialize.min';
@@ -28,7 +24,6 @@ import {currency} from './filter/currency';
 Vue.config.productionTip = false;
 
 Vue.use(ElementUI);
-Vue.use(BootstrapVue);
 Vue.use(VueInsProgressBar, {
   position: 'fixed',
   show: true,
