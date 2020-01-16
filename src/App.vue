@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-<!--    <Home></Home>-->
-    <Login></Login>
-    <vue-ins-progress-bar></vue-ins-progress-bar>
+    <router-view />
+    <vue-ins-progress-bar />
   </div>
 </template>
 

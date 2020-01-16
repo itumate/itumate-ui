@@ -92,6 +92,9 @@
       login() {
         this.loginConfirm.loginLoading = !this.loginConfirm.loginLoading;
         this.loginConfirm.text = this.loginConfirm.loginLoading === true ? '登陆中...' : '登陆';
+        setTimeout(() => {
+          this.$router.push('/home')
+        }, 3000);
       }
     },
     created() {
