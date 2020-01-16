@@ -2,16 +2,9 @@
     面包屑组件, 头部导航栏
 -->
 <template>
-<!--  <div class="breadcrumb">-->
-    <el-breadcrumb class="breadcrumb" separator-class="el-icon-arrow-right">
-      <el-breadcrumb-item
-        v-for="(item, index) in breadcrumbList"
-        :key="index"
-        @click="toPath(item.path)">
-        {{ item.name }}
-      </el-breadcrumb-item>
+    <el-breadcrumb class="nav-breadcrumb" separator-class="el-icon-arrow-right">
+        <el-breadcrumb-item v-for="(item, index) in breadcrumbList" :to="{ path: item.path }" :key="index">{{ item.meta.title }}</el-breadcrumb-item>
     </el-breadcrumb>
-<!--  </div>-->
 </template>
 
 <script>
@@ -29,14 +22,7 @@
         },
         methods: {
             getBreadcrumb() {
-                let matched = this.$route.matched.filter(item => item.name);
-                console.log('----');
-                console.log(matched)
-                this.breadcrumbList = matched;
-            },
-            toPath(path){
-                console.log(path)
-                this.$router.push(path);
+              this.breadcrumbList = this.$route.matched.filter(item => item.name);
             }
         },
         created() {
@@ -46,10 +32,9 @@
 </script>
 
 <style scoped>
-
-  .breadcrumb {
-    line-height: 30px;
-    font-size: 18px;
-    margin-left: 10px;
+  .nav-breadcrumb {
+    font-size: 1em !important;
+    line-height: 30px!important;
+    margin-left: 10px!important;
   }
 </style>
