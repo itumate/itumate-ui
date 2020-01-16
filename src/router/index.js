@@ -1,22 +1,24 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Login from "@/components/Login";
-import Home from "@/components/Home";
-import HelloWorld from '@/components/HelloWorld';
-import Git from "@/components/Git";
-
-import Menu from "@/components/Menu";
+// When your routing table is too long, you can split it into small modules.
+// Like This, Then you can continue in the router file segmentation smaller modules.
+import constantRoutes from "@/router/modules/router";
 
 Vue.use(Router);
 
-export default new Router({
+const createRouter = () => new Router({
   mode: 'history',
-  routes: [
-    {
-      path: '/',
-      name: '首页',
-      component: Login,
-    }
-  ]
+  routes: constantRoutes
 });
+
+const router = createRouter();
+
+// Replace Routes Dynamically
+// Detail see: https://github.com/vuejs/vue-router/issues/1234#issuecomment-357941465
+export function resetRouter() {
+  const newRouter = createRouter();
+  router.matcher = newRouter.matcher; // reset router
+}
+
+export default router;
