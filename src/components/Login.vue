@@ -9,8 +9,8 @@
     </el-carousel>
     <div class="login-main">
       <!--加载进度条-->
-      <div :class="{progress: loginConfirm.loginLoading}">
-        <div :class="{indeterminate: loginConfirm.loginLoading}"></div>
+      <div :class="{progress: loginLoading}">
+        <div :class="{indeterminate: loginLoading}"></div>
       </div>
 
       <div class="login-title">
@@ -25,14 +25,28 @@
 
       <div class="login-wrap">
         <el-tabs :stretch="true" v-model="tabActivity" class="el-tabs">
+
           <!-- 使用账号密码登陆 -->
-          <el-tab-pane label="账号登陆" name="AccountLogin" style="">
-            <el-form :model="formLabelAlign">
-              <el-input prefix-icon="el-icon-user-solid" v-model="formLabelAlign.name" placeholder="请输入账号"></el-input>
-              <el-input prefix-icon="fa fa-lock" v-model="formLabelAlign.region" placeholder="请输入密码"></el-input>
+          <el-tab-pane :disabled="loginLoading" label="账号登陆" name="accountLoginForm" style="">
+            <el-form :model="accountLoginForm">
+              <el-input
+                prefix-icon="el-icon-user-solid"
+                v-model="accountLoginForm.username"
+                placeholder="请输入账号">
+              </el-input>
+              <el-input
+                prefix-icon="fa fa-lock"
+                v-model="accountLoginForm.password"
+                placeholder="请输入密码"
+                show-password></el-input>
             </el-form>
             <el-row>
-              <el-button :loading="loginConfirm.loginLoading" type="primary" @click="login">{{ loginConfirm.text }}</el-button>
+              <el-button
+                :loading="loginLoading"
+                :disabled="accountLoginConfirm.submitDisabled"
+                type="primary" @click="loginWithPwd">
+                {{ loginSubmitText }}
+              </el-button>
             </el-row>
             <div class="login-aux">
               <label class="forget">忘记密码？</label>
@@ -41,17 +55,37 @@
           </el-tab-pane>
 
           <!-- 使用验证码登陆 -->
-          <el-tab-pane label="验证码登陆" name="VerificationCodeLogin">
-            <el-form :model="formLabelAlign">
-              <el-input prefix-icon="fa fa-envelope" v-model="formLabelAlign.name" placeholder="请输入邮箱"></el-input>
-              <el-input prefix-icon="fa fa-key" v-model="formLabelAlign.region" placeholder="请输入验证码">
-                <el-button slot="suffix" size="small" round style="position: relative; top: 10px;">验证码</el-button>
+          <el-tab-pane :disabled="loginLoading" label="验证码登陆" name="verifyCodeLoginForm">
+            <el-form :model="verifyCodeLoginForm">
+              <el-input
+                prefix-icon="fa fa-envelope"
+                v-model="verifyCodeLoginForm.email"
+                placeholder="请输入邮箱">
+              </el-input>
+              <el-input
+                prefix-icon="fa fa-key"
+                v-model="verifyCodeLoginForm.verifyCode"
+                placeholder="请输入验证码"
+                :style="{ 'padding-right': verifyCodeLoginConfirm.paddingRight + 'px'}">
+                <el-button
+                  slot="suffix" size="small"
+                  round @click="securityCode"
+                  :disabled="verifyCodeLoginConfirm.disabled"
+                  style="position: relative; top: 10px;">
+                  {{ verifyCodeLoginConfirm.text }}
+                </el-button>
               </el-input>
             </el-form>
             <el-row>
-              <el-button :loading="loginConfirm.loginLoading" type="primary" @click="login">{{ loginConfirm.text }}</el-button>
+              <el-button
+                :loading="loginLoading"
+                :disabled="verifyCodeLoginConfirm.submitDisabled"
+                type="primary" @click="loginWithVerify">
+                {{ loginSubmitText }}
+              </el-button>
             </el-row>
           </el-tab-pane>
+
         </el-tabs>
       </div>
     </div>
@@ -59,50 +93,112 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        slide: 0,
-        sliding: null,
-        screen: {
-          innerWidth: 0,
-          innerHeight: 0
+    import {TweenLite} from 'gsap';
+
+    export default {
+        data() {
+            return {
+                slide: 0,
+                sliding: null,
+                screen: {
+                    innerWidth: 0,
+                    innerHeight: 0
+                },
+                covers: [
+                    'https://test-one-road.oss-cn-hangzhou.aliyuncs.com/login/scenic-photo-of-bondi-beach.jpg',
+                    'https://test-one-road.oss-cn-hangzhou.aliyuncs.com/login/sean-o-KMn4VEeEPR8-unsplash.jpg',
+                    'https://test-one-road.oss-cn-hangzhou.aliyuncs.com/login/jack-brind-eV7WTlVcydg-unsplash.jpg'
+                ],
+                tabActivity: 'accountLoginForm',
+                /* 登录状态 */
+                loginLoading: false,
+                loginSubmitText: '登陆',
+                /* 账号登录确认 */
+                accountLoginConfirm: {
+                    submitDisabled: true
+                },
+                /* 验证码登录确认 */
+                verifyCodeLoginConfirm: {
+                    disabled: false,
+                    text: '验证码',
+                    countDown: 0,
+                    paddingRight: 80,
+                    resendInterval: 2,
+                    submitDisabled: true
+                },
+                /* 账号密码登录 */
+                accountLoginForm: {
+                    username: '',
+                    password: ''
+                },
+                /* 验证码登录 */
+                verifyCodeLoginForm: {
+                    email: '',
+                    verifyCode: '',
+                }
+            }
         },
-        covers: [
-          'https://test-one-road.oss-cn-hangzhou.aliyuncs.com/login/1.jpg',
-          'https://test-one-road.oss-cn-hangzhou.aliyuncs.com/login/scenic-photo-of-bondi-beach.jpg'
-        ],
-        tabActivity: 'AccountLogin',
-        formLabelAlign: {
-          name: '',
-          region: '',
-          type: ''
+        methods: {
+            resizeScreen() {
+                this.screen.innerWidth = window.innerWidth;
+                this.screen.innerHeight = window.innerHeight;
+            },
+            loginWithPwd() {
+                this.loginLoading = !this.loginLoading;
+                this.loginSubmitText = this.loginLoading === true ? '登陆中...' : '登陆';
+            },
+            loginWithVerify() {
+                this.loginLoading = !this.loginLoading;
+                this.loginSubmitText = this.loginLoading === true ? '登陆中...' : '登陆';
+            },
+            securityCode() {
+                if (this.verifyCodeLoginConfirm.countDown === 0) {
+                    this.verifyCodeLoginConfirm.countDown = this.verifyCodeLoginConfirm.resendInterval;
+                }
+                this.verifyCodeLoginConfirm.disabled = true;
+                this.decrease();
+            },
+            decrease() {
+                const describe = 's后重新发送';
+                this.verifyCodeLoginConfirm.countDown--;
+                TweenLite.to(this.$data.verifyCodeLoginConfirm, 0.5, {paddingRight: 120});
+                this.verifyCodeLoginConfirm.text = this.verifyCodeLoginConfirm.countDown + describe;
+                setTimeout(() => {
+                    if (this.verifyCodeLoginConfirm.countDown === 0) {
+                        this.verifyCodeLoginConfirm.disabled = false;
+                        this.verifyCodeLoginConfirm.text = '重新发送';
+                        TweenLite.to(this.$data.verifyCodeLoginConfirm, 0.5, {paddingRight: 90});
+                    } else {
+                        this.decrease();
+                    }
+                }, 1000);
+            }
         },
-        loginConfirm: {
-          loginLoading: false,
-          text: '登陆'
+        watch: {
+            /* 监听账号登录框 */
+            accountLoginForm: {
+                deep: true,
+                handler(newVal, oldVal) {
+                    this.accountLoginConfirm.submitDisabled = !(!!newVal.username && !!newVal.password);
+                }
+            },
+            /* 监听验证登录框 */
+            verifyCodeLoginForm: {
+                deep: true,
+                handler(newVal, oldVal) {
+                    this.verifyCodeLoginConfirm.submitDisabled = !(!!newVal.email && !!newVal.verifyCode);
+                }
+            }
         },
-      }
-    },
-    methods: {
-      resizeScreen() {
-        this.screen.innerWidth = window.innerWidth;
-        this.screen.innerHeight = window.innerHeight;
-      },
-      login() {
-        this.loginConfirm.loginLoading = !this.loginConfirm.loginLoading;
-        this.loginConfirm.text = this.loginConfirm.loginLoading === true ? '登陆中...' : '登陆';
-      }
-    },
-    created() {
-      this.resizeScreen();
-    },
-    mounted() {
-      window.onresize = () => {
-        this.resizeScreen();
-      };
+        created() {
+            this.resizeScreen();
+        },
+        mounted() {
+            window.onresize = () => {
+                this.resizeScreen();
+            };
+        }
     }
-  }
 </script>
 
 <style>
@@ -123,12 +219,12 @@
 
   /* 修改 tabs 字体样式 */
   .el-tabs__item {
-    font-size: 16px!important;
+    font-size: 16px !important;
     color: #999;
   }
 
   .el-tabs__content {
-    padding: 20px!important;
+    padding: 20px !important;
   }
 
   .el-row {
@@ -136,7 +232,7 @@
   }
 
   .el-input__prefix {
-    padding-left: 0!important;
+    padding-left: 0 !important;
   }
 
   /* 模拟进度条 */
@@ -160,7 +256,7 @@
   .login-main {
     position: absolute;
     z-index: 999;
-    width: 640px;
+    width: 660px;
     height: 400px;
     top: 0;
     bottom: 0;
@@ -228,7 +324,7 @@
 
   .login-wrap {
     float: right;
-    width: 280px;
+    width: 300px;
     height: 100%;
     background: white;
     box-shadow: 0 0 16px rgba(0, 0, 0, .4);
@@ -260,15 +356,15 @@
 
   input {
     color: #696969;
-    padding-left: 30px!important;
-    box-sizing: border-box!important;
-    border-bottom: 1px solid #DCDFE6!important;
+    padding-left: 30px !important;
+    box-sizing: border-box !important;
+    border-bottom: 1px solid #DCDFE6 !important;
   }
 
-  input:focus{
-    border-bottom: 1px solid #26a69a!important;
-    -webkit-box-shadow: 0 1px 0 0 #26a69a!important;
-    box-shadow: 0 1px 0 0 #26a69a!important;
+  input:focus {
+    border-bottom: 1px solid #26a69a !important;
+    -webkit-box-shadow: 0 1px 0 0 #26a69a !important;
+    box-shadow: 0 1px 0 0 #26a69a !important;
   }
 
   button {
