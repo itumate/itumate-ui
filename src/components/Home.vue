@@ -15,9 +15,6 @@
           </keep-alive>
         </transition>
       </el-main>
-      <el-footer>
-        <small class="text-muted">技术支持：某某某某某某 | 某某某某某某<br>服务热线：000-000-000</small>
-      </el-footer>
     </el-container>
   </el-container>
 </template>

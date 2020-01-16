@@ -77,7 +77,8 @@ section {
 }
 
 .text-muted {
-  color: #5c798f !important;
+  color: #98a6ad!important;
+  font-size: 14px;
 }
 
 .scroll-bar {

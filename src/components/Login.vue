@@ -2,6 +2,7 @@
   <div class="wrapper unselect">
     <el-carousel
       :interval="3000"
+      indicator-position="none"
       trigger="click" :height="screen.innerHeight + 'px'">
       <el-carousel-item v-for="(cover, index) in covers" :key="index">
         <img :src="cover" class="cover">
@@ -54,6 +55,11 @@
           </el-tab-pane>
         </el-tabs>
       </div>
+    </div>
+    <div class="footer">
+      <el-footer>
+        <small class="text-muted">技术支持：某某集团 | 某某技术有限公司<br>服务热线：000-000-000</small>
+      </el-footer>
     </div>
   </div>
 </template>
@@ -163,8 +169,8 @@
   .login-main {
     position: absolute;
     z-index: 999;
-    width: 640px;
-    height: 400px;
+    width: 80vh;
+    height: 50vh;
     top: 0;
     bottom: 0;
     left: 0;
@@ -176,7 +182,7 @@
 
   .login-title {
     float: left;
-    width: 360px;
+    width: 40vh;
     height: 100%;
     filter: alpha(Opacity=50);
     -moz-opacity: 0.5;
@@ -231,7 +237,7 @@
 
   .login-wrap {
     float: right;
-    width: 280px;
+    width: 40vh;
     height: 100%;
     background: white;
     box-shadow: 0 0 16px rgba(0, 0, 0, .4);
@@ -276,5 +282,12 @@
 
   button {
     width: 100%;
+  }
+
+  .footer {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    bottom: 0;
   }
 </style>
