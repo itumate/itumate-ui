@@ -129,7 +129,7 @@
                     text: '验证码',
                     countDown: 0,
                     paddingRight: 80,
-                    resendInterval: 2,
+                    resendInterval: 60,
                     submitDisabled: true
                 },
                 /* 账号密码登录 */
@@ -152,10 +152,30 @@
             loginWithPwd() {
                 this.loginLoading = !this.loginLoading;
                 this.loginSubmitText = this.loginLoading === true ? '登陆中...' : '登陆';
+                this.virtualLogin();
             },
             loginWithVerify() {
                 this.loginLoading = !this.loginLoading;
                 this.loginSubmitText = this.loginLoading === true ? '登陆中...' : '登陆';
+                // 模拟后台请求
+                this.virtualLogin();
+            },
+            virtualLogin(){
+                /* 模拟登录 */
+                this.$message({
+                    center: true,
+                    showClose: true,
+                    message: '正在请求登录...'
+                });
+                setTimeout(() => {
+                    this.$message({
+                        center: true,
+                        showClose: true,
+                        message: '登录成功',
+                        type: 'success'
+                    });
+                    this.$router.push('/home')
+                }, 3000);
             },
             securityCode() {
                 if (this.verifyCodeLoginConfirm.countDown === 0) {
@@ -238,7 +258,7 @@
   }
 
   .el-input__prefix {
-    padding-left: 0 !important;
+    /*padding-left: 0 !important;*/
   }
 
   /* 模拟进度条 */
@@ -362,7 +382,9 @@
 
   input {
     color: #696969;
+    text-overflow: ellipsis;
     padding-left: 30px !important;
+    padding-right: 30px !important;
     box-sizing: border-box !important;
     border-bottom: 1px solid #DCDFE6 !important;
   }
