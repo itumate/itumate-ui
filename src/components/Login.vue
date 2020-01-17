@@ -28,7 +28,7 @@
         <el-tabs :stretch="true" v-model="tabActivity" class="el-tabs">
 
           <!-- 使用账号密码登陆 -->
-          <el-tab-pane :disabled="loginLoading" label="账号登陆" name="accountLoginForm" style="">
+          <el-tab-pane :disabled="loginLoading" label="账号登陆" name="accountLoginForm" >
             <el-form :model="accountLoginForm">
               <el-input
                 prefix-icon="el-icon-user-solid"
@@ -56,7 +56,7 @@
           </el-tab-pane>
 
           <!-- 使用验证码登陆 -->
-          <el-tab-pane :disabled="loginLoading" label="验证码登陆" name="verifyCodeLoginForm">
+          <el-tab-pane :disabled="loginLoading" label="验证码登陆" name="verifyCodeLoginForm" >
             <el-form :model="verifyCodeLoginForm">
               <el-input
                 prefix-icon="fa fa-envelope"
@@ -69,8 +69,10 @@
                 placeholder="请输入验证码"
                 :style="{ 'padding-right': verifyCodeLoginConfirm.paddingRight + 'px'}">
                 <el-button
-                  slot="suffix" size="small"
-                  round @click="securityCode"
+                  round
+                  size="small"
+                  slot="suffix"
+                  @click="securityCode"
                   :disabled="verifyCodeLoginConfirm.disabled"
                   style="position: relative; top: 10px;">
                   {{ verifyCodeLoginConfirm.text }}
@@ -129,7 +131,7 @@
                     text: '验证码',
                     countDown: 0,
                     paddingRight: 80,
-                    resendInterval: 60,
+                    resendInterval: 3,
                     submitDisabled: true
                 },
                 /* 账号密码登录 */
@@ -228,15 +230,34 @@
 </script>
 
 <style>
-  /* 解决materialize样式冲突 */
-  .carousel, .carousel-item {
-    visibility: unset !important;
-    width: 100% !important;
-    height: 100% !important;
-    position: unset !important;
-    top: unset !important;
-    left: unset !important;
+
+  .login-wrap .el-tabs__content {
+    padding: 20px;
   }
+
+  .login-wrap .el-input {
+    padding: 1px 0;
+  }
+
+  .login-wrap input.el-input__inner {
+    border: none;
+    color: #696969;
+    text-overflow: ellipsis;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    border-radius: 0;
+    border-bottom: 1px solid #DCDFE6;
+  }
+
+  .login-wrap input.el-input__inner:focus {
+    border-bottom: 1px solid #26a69a;
+    -webkit-box-shadow: 0 1px 0 0 #26a69a;
+    box-shadow: 0 1px 0 0 #26a69a;
+  }
+</style>
+
+<style scoped>
 
   /* el 样式修改 */
   .el-tabs {
@@ -249,16 +270,8 @@
     color: #999;
   }
 
-  .el-tabs__content {
-    padding: 20px !important;
-  }
-
   .el-row {
     top: 10px;
-  }
-
-  .el-input__prefix {
-    /*padding-left: 0 !important;*/
   }
 
   /* 模拟进度条 */
@@ -282,8 +295,8 @@
   .login-main {
     position: absolute;
     z-index: 999;
-    width: 80vh;
-    height: 50vh;
+    width: 640px;
+    height: 400px;
     top: 0;
     bottom: 0;
     left: 0;
@@ -295,7 +308,7 @@
 
   .login-title {
     float: left;
-    width: 40vh;
+    width: 360px;
     height: 100%;
     filter: alpha(Opacity=50);
     -moz-opacity: 0.5;
@@ -350,7 +363,7 @@
 
   .login-wrap {
     float: right;
-    width: 40vh;
+    width: 280px;
     height: 100%;
     background: white;
     box-shadow: 0 0 16px rgba(0, 0, 0, .4);
@@ -359,6 +372,7 @@
   .login-aux {
     position: relative;
     top: 20px;
+    height: 20px;
   }
 
   .login-aux label {
@@ -378,21 +392,6 @@
   label.register {
     float: right;
     padding-right: 10px;
-  }
-
-  input {
-    color: #696969;
-    text-overflow: ellipsis;
-    padding-left: 30px !important;
-    padding-right: 30px !important;
-    box-sizing: border-box !important;
-    border-bottom: 1px solid #DCDFE6 !important;
-  }
-
-  input:focus {
-    border-bottom: 1px solid #26a69a !important;
-    -webkit-box-shadow: 0 1px 0 0 #26a69a !important;
-    box-shadow: 0 1px 0 0 #26a69a !important;
   }
 
   button {

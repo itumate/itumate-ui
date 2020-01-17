@@ -8,8 +8,8 @@ import './assets/css/theme/index.css';
 import './assets/css/webkit.scrollbar.css';
 
 // waves 效果
-import 'materialize-css/dist/js/materialize.min';
-import 'materialize-css/dist/css/materialize.min.css';
+// import 'materialize-css/dist/js/materialize.min';
+// import 'materialize-css/dist/css/materialize.min.css';
 
 // font-awesome
 import 'font-awesome/css/font-awesome.min.css';
