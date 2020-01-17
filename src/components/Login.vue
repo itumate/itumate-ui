@@ -4,8 +4,17 @@
       :interval="3000"
       indicator-position="none"
       trigger="click" :height="screen.innerHeight + 'px'">
-      <el-carousel-item v-for="(cover, index) in covers" :key="index">
+      <!--<el-carousel-item v-for="(cover, index) in covers" :key="index">
         <img :src="cover" class="cover">
+      </el-carousel-item>-->
+      <el-carousel-item>
+        <img src="../assets/img/login-covers-1-1.jpg" class="cover">
+      </el-carousel-item>
+      <el-carousel-item>
+        <img src="../assets/img/login-covers-1-2.jpg" class="cover">
+      </el-carousel-item>
+      <el-carousel-item>
+        <img src="../assets/img/login-covers-1-3.jpg" class="cover">
       </el-carousel-item>
     </el-carousel>
     <div class="login-main">
@@ -113,9 +122,9 @@
                     innerHeight: 0
                 },
                 covers: [
-                    'https://test-one-road.oss-cn-hangzhou.aliyuncs.com/login/scenic-photo-of-bondi-beach.jpg',
-                    'https://test-one-road.oss-cn-hangzhou.aliyuncs.com/login/sean-o-KMn4VEeEPR8-unsplash.jpg',
-                    'https://test-one-road.oss-cn-hangzhou.aliyuncs.com/login/jack-brind-eV7WTlVcydg-unsplash.jpg'
+                    // 'https://test-one-road.oss-cn-hangzhou.aliyuncs.com/login/scenic-photo-of-bondi-beach.jpg',
+                    // 'https://test-one-road.oss-cn-hangzhou.aliyuncs.com/login/sean-o-KMn4VEeEPR8-unsplash.jpg',
+                    // 'https://test-one-road.oss-cn-hangzhou.aliyuncs.com/login/jack-brind-eV7WTlVcydg-unsplash.jpg'
                 ],
                 tabActivity: 'accountLoginForm',
                 /* 登录状态 */
@@ -235,6 +244,7 @@
     padding: 20px;
   }
 
+  /* 登陆 input */
   .login-wrap .el-input {
     padding: 1px 0;
   }
@@ -248,12 +258,30 @@
     box-sizing: border-box;
     border-radius: 0;
     border-bottom: 1px solid #DCDFE6;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
   }
 
   .login-wrap input.el-input__inner:focus {
     border-bottom: 1px solid #26a69a;
     -webkit-box-shadow: 0 1px 0 0 #26a69a;
     box-shadow: 0 1px 0 0 #26a69a;
+  }
+
+  /* tabs 字体样式 */
+  .login-wrap .el-tabs__item {
+    color: #999;
+    font-size: 18px;
+    line-height: 36px;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .login-wrap .el-tabs__item.is-active {
+    color: #7266BA;
   }
 </style>
 
@@ -264,21 +292,8 @@
     margin-top: 15px;
   }
 
-  /* 修改 tabs 字体样式 */
-  .el-tabs__item {
-    font-size: 16px !important;
-    color: #999;
-  }
-
   .el-row {
     top: 10px;
-  }
-
-  /* 模拟进度条 */
-  .progress {
-    position: absolute;
-    height: 5px;
-    margin: 0;
   }
 
   /* 登陆样式 */
@@ -295,7 +310,7 @@
   .login-main {
     position: absolute;
     z-index: 999;
-    width: 640px;
+    width: 660px;
     height: 400px;
     top: 0;
     bottom: 0;
@@ -310,9 +325,9 @@
     float: left;
     width: 360px;
     height: 100%;
-    filter: alpha(Opacity=50);
-    -moz-opacity: 0.5;
-    opacity: 0.5;
+    filter: alpha(Opacity=30);
+    -moz-opacity: 0.3;
+    opacity: 0.3;
     -webkit-filter: brightness(5);
     background: white;
   }
@@ -324,7 +339,7 @@
     margin-top: 80px;
   }
 
-  /* */
+  /* 项目名称样式 */
   .navbar-brand {
     position: absolute;
     display: inline-block;
@@ -363,7 +378,7 @@
 
   .login-wrap {
     float: right;
-    width: 280px;
+    width: 300px;
     height: 100%;
     background: white;
     box-shadow: 0 0 16px rgba(0, 0, 0, .4);
