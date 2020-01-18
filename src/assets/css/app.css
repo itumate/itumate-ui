@@ -100,3 +100,47 @@ section {
 .bg-fff {
   background-color: #FFF;
 }
+
+/* 分隔线开始 */
+.more-condition .el-divider {
+  margin-top: 0;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.more-condition .el-divider__text {
+  color: #C0C4CC;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.more-condition .bars {
+  padding-left: 5px;
+}
+
+.more-condition .el-divider:hover {
+  background-color: #E6E6FA;
+}
+
+.more-condition .el-divider__text:hover {
+  color: #8e85c8;
+  cursor: pointer;
+}
+
+.more-condition .el-divider__text:active {
+  color: #7266BA;
+}
+
+/* 分割线结束 */
+
+/* 搜索按钮开始 */
+.query-btn .el-form-item__content {
+  margin-left: 20px !important;
+}
+
+/* 搜索按钮结束 */
