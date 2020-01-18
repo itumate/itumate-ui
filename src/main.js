@@ -4,6 +4,7 @@ import VueInsProgressBar from "vue-ins-progress-bar";
 
 // style
 import './assets/css/app.css';
+import './assets/css/app-progress.css'
 import './assets/css/theme/index.css';
 import './assets/css/webkit.scrollbar.css';
 

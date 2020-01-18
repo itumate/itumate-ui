@@ -12,7 +12,7 @@
     }
 -->
 <template>
-  <el-menu-item :index="menuItem.path" class="waves waves-effect animated" :class="menuItem.animated">
+  <el-menu-item :index="menuItem.path" class="animated" :class="menuItem.animated">
     <template>
       <i v-if="menuItem.icon.isElement" :class="menuItem.icon.class"></i>
       <i v-else class="fa fa-fw fa-lg" :class="menuItem.icon.class"></i>
