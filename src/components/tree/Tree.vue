@@ -164,4 +164,8 @@
   .tree {
     height: calc(100% - 52px);
   }
+
+  .el-tree-node__content:hover .fa {
+    color: #675ca7;
+  }
 </style>

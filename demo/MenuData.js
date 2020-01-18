@@ -1,63 +1,141 @@
 const tableData = [{
   date: '2016-05-03',
-  name: '王小虎',
-  address: '上海市普陀区金沙江路 1518 弄'
+  label: '系统设置',
+  parentLabel: '-',
+  status: 1,
+  statusLabel: '启用'
 }, {
   date: '2016-05-02',
-  name: '王小虎',
-  address: '上海市普陀区金沙江路 1518 弄'
+  label: '菜单管理',
+  parentLabel: '系统设置',
+  status: 2,
+  statusLabel: '禁用'
 }, {
   date: '2016-05-04',
-  name: '王小虎',
-  address: '上海市普陀区金沙江路 1518 弄'
+  label: '用户管理',
+  parentLabel: '系统设置',
+  status: 1,
+  statusLabel: '启用'
 }, {
-  date: '2016-05-01',
-  name: '王小虎',
-  address: '上海市普陀区金沙江路 1518 弄'
+  date: '2016-05-04',
+  label: '示例菜单',
+  parentLabel: '示例菜单',
+  status: 1,
+  statusLabel: '启用'
 }, {
-  date: '2016-05-08',
-  name: '王小虎',
-  address: '上海市普陀区金沙江路 1518 弄'
+  date: '2016-05-04',
+  label: '示例菜单',
+  parentLabel: '示例菜单',
+  status: 1,
+  statusLabel: '启用'
 }, {
-  date: '2016-05-06',
-  name: '王小虎',
-  address: '上海市普陀区金沙江路 1518 弄'
+  date: '2016-05-04',
+  label: '示例菜单',
+  parentLabel: '示例菜单',
+  status: 1,
+  statusLabel: '启用'
 }, {
-  date: '2016-05-07',
-  name: '王小虎',
-  address: '上海市普陀区金沙江路 1518 弄'
+  date: '2016-05-04',
+  label: '示例菜单',
+  parentLabel: '示例菜单',
+  status: 1,
+  statusLabel: '启用'
 }, {
-  date: '2016-05-08',
-  name: '王小虎',
-  address: '上海市普陀区金沙江路 1518 弄'
+  date: '2016-05-04',
+  label: '示例菜单',
+  parentLabel: '示例菜单',
+  status: 1,
+  statusLabel: '启用'
 }, {
-  date: '2016-05-06',
-  name: '王小虎',
-  address: '上海市普陀区金沙江路 1518 弄'
+  date: '2016-05-04',
+  label: '示例菜单',
+  parentLabel: '示例菜单',
+  status: 1,
+  statusLabel: '启用'
 }, {
-  date: '2016-05-07',
-  name: '王小虎',
-  address: '上海市普陀区金沙江路 1518 弄'
+  date: '2016-05-04',
+  label: '示例菜单',
+  parentLabel: '示例菜单',
+  status: 1,
+  statusLabel: '启用'
 }, {
-  date: '2016-05-06',
-  name: '王小虎',
-  address: '上海市普陀区金沙江路 1518 弄'
+  date: '2016-05-04',
+  label: '示例菜单',
+  parentLabel: '示例菜单',
+  status: 1,
+  statusLabel: '启用'
 }, {
-  date: '2016-05-07',
-  name: '王小虎',
-  address: '上海市普陀区金沙江路 1518 弄'
+  date: '2016-05-04',
+  label: '示例菜单',
+  parentLabel: '示例菜单',
+  status: 1,
+  statusLabel: '启用'
 }, {
-  date: '2016-05-08',
-  name: '王小虎',
-  address: '上海市普陀区金沙江路 1518 弄'
+  date: '2016-05-04',
+  label: '示例菜单',
+  parentLabel: '示例菜单',
+  status: 1,
+  statusLabel: '启用'
 }, {
-  date: '2016-05-06',
-  name: '王小虎',
-  address: '上海市普陀区金沙江路 1518 弄'
+  date: '2016-05-04',
+  label: '示例菜单',
+  parentLabel: '示例菜单',
+  status: 1,
+  statusLabel: '启用'
 }, {
-  date: '2016-05-07',
-  name: '王小虎',
-  address: '上海市普陀区金沙江路 1518 弄'
+  date: '2016-05-04',
+  label: '示例菜单',
+  parentLabel: '示例菜单',
+  status: 1,
+  statusLabel: '启用'
+}, {
+  date: '2016-05-04',
+  label: '示例菜单',
+  parentLabel: '示例菜单',
+  status: 1,
+  statusLabel: '启用'
+}, {
+  date: '2016-05-04',
+  label: '示例菜单',
+  parentLabel: '示例菜单',
+  status: 1,
+  statusLabel: '启用'
+}, {
+  date: '2016-05-04',
+  label: '示例菜单',
+  parentLabel: '示例菜单',
+  status: 1,
+  statusLabel: '启用'
+}, {
+  date: '2016-05-04',
+  label: '示例菜单',
+  parentLabel: '示例菜单',
+  status: 1,
+  statusLabel: '启用'
+}, {
+  date: '2016-05-04',
+  label: '示例菜单',
+  parentLabel: '示例菜单',
+  status: 1,
+  statusLabel: '启用'
+}, {
+  date: '2016-05-04',
+  label: '示例菜单',
+  parentLabel: '示例菜单',
+  status: 1,
+  statusLabel: '启用'
+}, {
+  date: '2016-05-04',
+  label: '示例菜单',
+  parentLabel: '示例菜单',
+  status: 1,
+  statusLabel: '启用'
+}, {
+  date: '2016-05-04',
+  label: '示例菜单',
+  parentLabel: '示例菜单',
+  status: 1,
+  statusLabel: '启用'
 }];
 
 
@@ -85,7 +163,30 @@ const treeNode = [{
   }]
 }];
 
+function generateChildrenNodes(node) {
+  debugger
+  if (node === null || node.id === 0){
+    return treeNode;
+  }
+  let id = node.id * 10;
+  let label = node.label;
+
+  const nodes = [];
+  for (let index in 10){
+    nodes.push({
+      id: id + index,
+      isLeaf: false,
+      label: label + '-' + id + index,
+      icon: {
+        class: 'fa-spinner'
+      }
+    })
+  }
+  return nodes;
+}
+
 export default {
   tableData,
-  treeNode
+  treeNode,
+  generateChildrenNodes
 }
