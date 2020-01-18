@@ -124,7 +124,7 @@
         border
         header-row-class-name="header-row"
         :data="tableData"
-        :height="screen.innerHeight"
+        :height="table.innerHeight"
         style="width: 100%">
         <el-table-column
           prop="date"
@@ -273,8 +273,10 @@
                 console.log(this.doesShowMoreCondition, this.showMoreConditionText)
             },
             resizeScreen() {
-                let unit = (window.innerHeight - 100) / 48 - 2;
-                this.screen.innerHeight = unit * 48;
+                // 计算 table 尺寸, 屏幕高度 - 200(header - main.padding - content.padding) = 可用尺寸
+                // table cell 大小 48px, 可用尺寸 / 48 = 可用单位
+                let unit = (window.innerHeight - 200) / 48;
+                this.table.innerHeight = unit * 48;
             }
         },
         created(){
@@ -287,7 +289,7 @@
         },
         data(){
             return{
-                screen: {
+                table: {
                     innerHeight: 0,
                 },
                 doesShowMoreCondition: false,
