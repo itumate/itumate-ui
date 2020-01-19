@@ -1,10 +1,7 @@
 <template>
   <el-container>
     <el-aside class="bg-fff">
-      <tree
-      :showCheckbox="true"
-      :treeNodes="treeNodes"
-      ref="tree"></tree>
+      <tree :showCheckbox="true" :treeNodes="treeNodes" ref="tree"></tree>
     </el-aside>
     <el-main class="no-padding margin-left-10 bg-fff">
       <el-row :gutter="15">
@@ -17,9 +14,7 @@
           </el-col>
           <el-col :span="12">
             <el-form-item label="手机号" prop="mobile">
-              <el-input v-model="formData.mobile" placeholder="请输入手机号"
-                        :maxlength="11" show-word-limit clearable
-                        prefix-icon='el-icon-mobile'></el-input>
+              <el-input v-model="formData.mobile" placeholder="请输入手机号" :maxlength="11" show-word-limit clearable prefix-icon='el-icon-mobile'></el-input>
             </el-form-item>
           </el-col>
           <el-col :span="24">
@@ -50,7 +45,7 @@
 
           <el-col class="query-btn">
             <el-form-item size="small" class="fun-btn">
-              <el-button type="primary" round icon="el-icon-plus">新增</el-button>
+              <el-button type="primary" round icon="el-icon-plus" @click="menuAdd">新增</el-button>
               <el-button type="danger" round icon="el-icon-delete">删除</el-button>
               <el-button type="primary" round icon="fa fa-share">导出</el-button>
               <el-divider direction="vertical" />
@@ -72,7 +67,7 @@
         <el-table-column prop="status" label="状态">
           <template slot-scope="scope">
             <el-link :underline="false"
-              :type="scope.row.status === 1 ? 'success' : scope.row.status === 2 ? 'danger' : 'warning'">
+                     :type="scope.row.status === 1 ? 'success' : scope.row.status === 2 ? 'danger' : 'warning'">
               {{scope.row.statusLabel}}
             </el-link>
           </template>
@@ -84,7 +79,6 @@
             <el-button type="text" size="small">删除</el-button>
           </template>
         </el-table-column>
-
       </el-table>
 
       <pagination-helper
@@ -98,62 +92,70 @@
 
 <script>
 
-    import Tree from "./tree/Tree";
-    import MoreConditionDivider from "./global/MoreConditionDivider";
+  import Tree from "./../tree/Tree";
+  import MoreConditionDivider from "../commons/MoreConditionDivider";
 
-    import MenuData from "../../demo/MenuData";
+  import MenuData from "../../../demo/MenuData";
 
-    export default {
-        name: 'Menu',
-        components: {
-            MoreConditionDivider,
-            Tree
-        },
-        methods: {
-            submitForm() {
-                this.$refs['conditionForm'].validate(valid => {
-                    if (!valid) return false;
-                })
-            },
-            resetForm() {
-                this.$refs['conditionForm'].resetFields()
-            },
-            showMoreConditionToggle(doesShowMoreCondition){
-                this.doesShowMoreCondition = doesShowMoreCondition;
-            },
-            resizeScreen() {
-                // 计算 table 尺寸, 屏幕高度 - 200(header - main.padding - content.padding) = 可用尺寸
-                // table cell 大小 48px, 可用尺寸 / 48 = 可用单位
-                let unit = (window.innerHeight - 200) / 48;
-                this.table.innerHeight = unit * 48;
-            }
-        },
-        created(){
-            this.resizeScreen();
-        },
-        mounted() {
-            window.onresize = () => {
-                this.resizeScreen();
-            };
-        },
-        data(){
-            return{
-                table: {
-                    innerHeight: 0,
-                },
-                doesShowMoreCondition: false,
+  export default {
+    name: 'MenuList',
+    components: {
+      MoreConditionDivider,
+      Tree
+    },
+    methods: {
+      submitForm() {
+        this.$refs['conditionForm'].validate(valid => {
+          if (!valid) return false;
+        })
+      },
+      resetForm() {
+        this.$refs['conditionForm'].resetFields()
+      },
+      showMoreConditionToggle(doesShowMoreCondition){
+        this.doesShowMoreCondition = doesShowMoreCondition;
+      },
+      resizeScreen() {
+        // 计算 table 尺寸, 屏幕高度 - 200(header - main.padding - content.padding) = 可用尺寸
+        // table cell 大小 48px, 可用尺寸 / 48 = 可用单位
+        let unit = (window.innerHeight - 200) / 48;
+        this.table.innerHeight = unit * 48;
+      },
+      menuAdd(){
+        this.$router.push('/home/menu/1/detail');
+      }
+    },
+    created(){
+      this.resizeScreen();
+    },
+    mounted() {
+      window.onresize = () => {
+        this.resizeScreen();
+      };
+    },
+    watch: {
+      '$route'(to, form){
 
-                /* 以下为测试数据 */
-                treeNodes: MenuData.treeNode,
-                tableData: MenuData.tableData,
-                formData: {
-                    menuLabel: undefined,
-                    mobile: '',
-                    createDate: null,
-                }
-            }
+      }
+    },
+    data(){
+      return{
+        table: {
+          innerHeight: 0,
+        },
+        doesShowMoreCondition: false,
+
+        /* 以下为测试数据 */
+        treeNodes: MenuData.treeNode,
+        tableData: MenuData.tableData,
+        formData: {
+          menuLabel: undefined,
+          mobile: '',
+          createDate: null,
         }
+      }
     }
+  }
 </script>
 
 <style scoped>

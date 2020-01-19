@@ -16,8 +16,8 @@ import App from './App';
 import router from './router';
 
 // Global Component
-import SliderToggle from "@/components/global/SliderToggle";
-import PaginationHelper from "@/components/global/PaginationHelper";
+import SliderToggle from "@/components/commons/SliderToggle";
+import PaginationHelper from "@/components/commons/PaginationHelper";
 
 Vue.component('SliderToggle', SliderToggle);
 Vue.component('PaginationHelper', PaginationHelper);

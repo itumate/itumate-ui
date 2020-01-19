@@ -2,21 +2,19 @@ const constantRoutes = [
   {
     path: '/',
     meta: {
-      title: '首页'
+      title: '登录'
     },
     component: () => import('@/components/Login'),
   },
   {
     path: '/home',
-    name: 'Home',
     meta: {
-      title: '首页2'
+      title: '首页'
     },
     component: () => import('@/components/Home'),
     children: [
       {
         path: 'helloWorld',
-        name: 'helloWorld',
         meta: {
           title: '你好,世界'
         },
@@ -24,7 +22,6 @@ const constantRoutes = [
       },
       {
         path: 'git',
-        name: 'git',
         meta: {
           title: 'git'
         },
@@ -32,11 +29,17 @@ const constantRoutes = [
       },
       {
         path: 'menu',
-        name: 'menu',
         meta: {
           title: '菜单'
         },
-        component: () => import('@/components/Menu')
+        component: () => import('@/components/menu/MenuList')
+      },
+      {
+        path: 'menu/:id/detail',
+        meta: {
+          title: '菜单详情'
+        },
+        component: () => import('@/components/menu/MenuDetail')
       }
     ]
   }

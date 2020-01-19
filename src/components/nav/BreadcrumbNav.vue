@@ -22,7 +22,7 @@
         },
         methods: {
             getBreadcrumb() {
-              this.breadcrumbList = this.$route.matched.filter(item => item.name);
+              this.breadcrumbList = this.$route.matched.filter(item => item.meta.title);
             }
         },
         created() {
