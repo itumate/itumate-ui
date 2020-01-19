@@ -41,7 +41,7 @@
           <slider-toggle>
             <el-col :span="12" v-show="doesShowMoreCondition">
               <el-form-item label="更多条件">
-                <el-input placeholder="更多条件" clearable :style="{width: '100%'}"></el-input>
+                <el-input placeholder="更多条件" :style="{width: '100%'}"></el-input>
               </el-form-item>
             </el-col>
           </slider-toggle>
@@ -49,17 +49,22 @@
           <more-condition-divider @showMoreConditionToggle="showMoreConditionToggle"/>
 
           <el-col class="query-btn">
-            <el-form-item size="large" style="float: left;">
-              <el-button type="primary" @click="submitForm">检索</el-button>
-              <el-button @click="resetForm">重置</el-button>
+            <el-form-item size="small" class="fun-btn">
+              <el-button type="primary" round icon="el-icon-plus">新增</el-button>
+              <el-button type="danger" round icon="el-icon-delete">删除</el-button>
+              <el-button type="primary" round icon="fa fa-share">导出</el-button>
+              <el-divider direction="vertical" />
+            </el-form-item>
+            <el-form-item size="small" class="search-btn">
+              <el-divider direction="vertical" />
+              <el-button type="primary" @click="submitForm" icon="fa fa-search">检索</el-button>
+              <el-button @click="resetForm" icon="fa fa-undo">重置</el-button>
             </el-form-item>
           </el-col>
         </el-form>
       </el-row>
 
-      <el-table :data="tableData"
-                :height="table.innerHeight"
-                header-row-class-name="header-row" >
+      <el-table :data="tableData" :height="table.innerHeight" header-row-class-name="header-row" >
         <el-table-column type="index" width="50"></el-table-column>
         <el-table-column prop="label" label="菜单名称"></el-table-column>
         <el-table-column prop="date" label="创建日期"></el-table-column>

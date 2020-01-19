@@ -143,4 +143,12 @@ section {
   margin-left: 20px !important;
 }
 
+.query-btn .search-btn{
+  float: right;
+}
+
+.query-btn .fun-btn {
+  float: left;
+}
+
 /* 搜索按钮结束 */
