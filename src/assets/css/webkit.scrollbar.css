@@ -28,6 +28,7 @@
     background: rgba(225, 246, 143, .3);
 }
 
+/* 不活跃样式 */
 ::-webkit-scrollbar-thumb:window-inactive {
-    background: rgba(225, 246, 143, .3);
+    /*background: rgba(225, 246, 143, .3);*/
 }

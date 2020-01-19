@@ -57,8 +57,7 @@
         </el-form>
       </el-row>
 
-      <el-table stripe border
-                :data="tableData"
+      <el-table :data="tableData"
                 :height="table.innerHeight"
                 header-row-class-name="header-row" >
         <el-table-column type="index" width="50"></el-table-column>

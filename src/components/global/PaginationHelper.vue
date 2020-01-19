@@ -53,7 +53,7 @@
         },
         computed: {
             checkPageSize() {
-                return this.pageSize === null ? this.defaultPageSize : this.pageSize
+                return this.pageSize === undefined ? this.defaultPageSize : this.pageSize
             },
             checkLayout() {
                 if (this.showAllLayout){
@@ -89,8 +89,11 @@
 <style>
 
   .header-row th {
-    background: #EBEEF5;
-    border-top: 1px solid #EBEEF5;
+    /*background: #EBEEF5;*/
+    border-bottom: none!important;
+    /*color: #58666e;*/
+    background-color: #FAFAFA;
+    /*border-top: 1px solid #EBEEF5;*/
   }
 
   .pagination {
@@ -102,6 +105,7 @@
   .pagination .el-pagination {
     height: 48px;
     padding: 10px 0;
+    font-weight: normal;
   }
 
   .pagination .el-pagination .el-pager .number:hover{
