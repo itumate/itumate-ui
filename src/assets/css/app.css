@@ -67,10 +67,10 @@ section {
   grid-template-rows: 25px calc(100% - 25px);
 }
 
-/* ------------- 修复 materialize-css 样式问题 -------------*/
-.waves-effect {
-  display: block!important;
+.page-wrapper main {
+  background-color: #FFF;
 }
+
 
 /* ------------- APP 布局--------- */
 .app-wrapper {
@@ -159,3 +159,10 @@ section {
 }
 
 /* 搜索按钮结束 */
+
+/* ----------element ui---------------*/
+
+/* dialog  样式 */
+.el-dialog__body {
+  overflow: auto;
+}
