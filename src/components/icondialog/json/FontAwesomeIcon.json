@@ -1,0 +1,2654 @@
+[
+  {
+    "name": "杯子、玻璃杯",
+    "key": "fa fa-glass"
+  },
+  {
+    "name": "汤匙、勺子",
+    "key": "fa fa-spoon"
+  },
+  {
+    "name": "容器、玻璃瓶",
+    "key": "fa fa-flask"
+  },
+  {
+    "name": "照相机、拍照",
+    "key": "fa fa-camera"
+  },
+  {
+    "name": "照相机、拍照",
+    "key": "fa fa-camera-retro"
+  },
+  {
+    "name": "摄影机、录像、摄像",
+    "key": "fa fa-video-camera"
+  },
+  {
+    "name": "图片、相片、照片",
+    "key": "fa fa-photo"
+  },
+  {
+    "name": "音乐、音频",
+    "key": "fa fa-music"
+  },
+  {
+    "name": "电影、视频",
+    "key": "fa fa-film"
+  },
+  {
+    "name": "后退、上一曲",
+    "key": "fa fa-step-backward"
+  },
+  {
+    "name": "前进、下一曲",
+    "key": "fa fa-step-forward"
+  },
+  {
+    "name": "后退",
+    "key": "fa fa-backward"
+  },
+  {
+    "name": "前进",
+    "key": "fa fa-forward"
+  },
+  {
+    "name": "快退",
+    "key": "fa fa-fast-backward"
+  },
+  {
+    "name": "快进",
+    "key": "fa fa-fast-forward"
+  },
+  {
+    "name": "播放",
+    "key": "fa fa-play"
+  },
+  {
+    "name": "播放",
+    "key": "fa fa-play-circle"
+  },
+  {
+    "name": "播放",
+    "key": "fa fa-play-circle-o"
+  },
+  {
+    "name": "暂停播放",
+    "key": "fa fa-pause"
+  },
+  {
+    "name": "暂停播放",
+    "key": "fa fa-pause-circle"
+  },
+  {
+    "name": "暂停播放",
+    "key": "fa fa-pause-circle-o"
+  },
+  {
+    "name": "停止播放、结束播放",
+    "key": "fa fa-stop"
+  },
+  {
+    "name": "停止播放、结束播放",
+    "key": "fa fa-stop-circle"
+  },
+  {
+    "name": "停止播放、结束播放",
+    "key": "fa fa-stop-circle-o"
+  },
+  {
+    "name": "随机播放",
+    "key": "fa fa-random"
+  },
+  {
+    "name": "循环播放",
+    "key": "fa fa-retweet"
+  },
+  {
+    "name": "弹出光盘",
+    "key": "fa fa-eject"
+  },
+  {
+    "name": "静音",
+    "key": "fa fa-volume-off"
+  },
+  {
+    "name": "音量减",
+    "key": "fa fa-volume-down"
+  },
+  {
+    "name": "音量加",
+    "key": "fa fa-volume-up"
+  },
+  {
+    "name": "头戴耳机",
+    "key": "fa fa-headphones"
+  },
+  {
+    "name": "麦克风",
+    "key": "fa fa-microphone"
+  },
+  {
+    "name": "麦克风禁用",
+    "key": "fa fa-microphone-slash"
+  },
+  {
+    "name": "向右旋转、顺时针旋转、重复",
+    "key": "fa fa-repeat"
+  },
+  {
+    "name": "向左旋转、逆时针旋转、撤销",
+    "key": "fa fa-rotate-left"
+  },
+  {
+    "name": "刷新、同步",
+    "key": "fa fa-refresh"
+  },
+  {
+    "name": "漏斗、筛选、过滤",
+    "key": "fa fa-filter"
+  },
+  {
+    "name": "搜索、查询",
+    "key": "fa fa-search"
+  },
+  {
+    "name": "搜索、查询、放大",
+    "key": "fa fa-search-plus"
+  },
+  {
+    "name": "搜索、查询、缩小",
+    "key": "fa fa-search-minus"
+  },
+  {
+    "name": "加",
+    "key": "fa fa-plus-circle"
+  },
+  {
+    "name": "加",
+    "key": "fa fa-plus-square"
+  },
+  {
+    "name": "加",
+    "key": "fa fa-plus-square-o"
+  },
+  {
+    "name": "加",
+    "key": "fa fa-plus"
+  },
+  {
+    "name": "减",
+    "key": "fa fa-minus-circle"
+  },
+  {
+    "name": "减",
+    "key": "fa fa-minus-square"
+  },
+  {
+    "name": "减",
+    "key": "fa fa-minus-square-o"
+  },
+  {
+    "name": "减",
+    "key": "fa fa-minus"
+  },
+  {
+    "name": "乘、雪花",
+    "key": "fa fa-asterisk"
+  },
+  {
+    "name": "雪花",
+    "key": "fa fa-snowflake-o"
+  },
+  {
+    "name": "勾选、对、正确",
+    "key": "fa fa-check"
+  },
+  {
+    "name": "勾选、对、正确、多选、复选",
+    "key": "fa fa-check-square"
+  },
+  {
+    "name": "勾选、对、正确、多选、复选",
+    "key": "fa fa-check-square-o"
+  },
+  {
+    "name": "勾选、对、正确、多选、复选",
+    "key": "fa fa-check-circle"
+  },
+  {
+    "name": "勾选、对、正确、多选、复选",
+    "key": "fa fa-check-circle-o"
+  },
+  {
+    "name": "关",
+    "key": "fa fa-toggle-off"
+  },
+  {
+    "name": "开",
+    "key": "fa fa-toggle-on"
+  },
+  {
+    "name": "圆圈、单选",
+    "key": "fa fa-circle-o"
+  },
+  {
+    "name": "单选",
+    "key": "fa fa-dot-circle-o"
+  },
+  {
+    "name": "圆",
+    "key": "fa fa-circle"
+  },
+  {
+    "name": "圆",
+    "key": "fa fa-circle-thin"
+  },
+  {
+    "name": "带槽的圆",
+    "key": "fa fa-circle-o-notch"
+  },
+  {
+    "name": "删除、叉、错误、关闭、乘",
+    "key": "fa fa-remove"
+  },
+  {
+    "name": "删除、叉、错误、关闭",
+    "key": "fa fa-times-circle"
+  },
+  {
+    "name": "删除、叉、错误、关闭",
+    "key": "fa fa-times-circle-o"
+  },
+  {
+    "name": "删除、垃圾桶",
+    "key": "fa fa-trash-o"
+  },
+  {
+    "name": "删除、垃圾桶",
+    "key": "fa fa-trash"
+  },
+  {
+    "name": "回收",
+    "key": "fa fa-recycle"
+  },
+  {
+    "name": "禁止",
+    "key": "fa fa-ban"
+  },
+  {
+    "name": "关闭、关机",
+    "key": "fa fa-power-off"
+  },
+  {
+    "name": "退出",
+    "key": "fa fa-sign-out"
+  },
+  {
+    "name": "登入",
+    "key": "fa fa-sign-in"
+  },
+  {
+    "name": "锁定",
+    "key": "fa fa-lock"
+  },
+  {
+    "name": "解锁",
+    "key": "fa fa-unlock"
+  },
+  {
+    "name": "解锁",
+    "key": "fa fa-unlock-alt"
+  },
+  {
+    "name": "钥匙",
+    "key": "fa fa-key"
+  },
+  {
+    "name": "feed、rss",
+    "key": "fa fa-feed"
+  },
+  {
+    "name": "feed、rss",
+    "key": "fa fa-rss-square"
+  },
+  {
+    "name": "podcast",
+    "key": "fa fa-podcast"
+  },
+  {
+    "name": "邮件、信封",
+    "key": "fa fa-envelope"
+  },
+  {
+    "name": "邮件、信封",
+    "key": "fa fa-envelope-o"
+  },
+  {
+    "name": "邮件、信封",
+    "key": "fa fa-envelope-square"
+  },
+  {
+    "name": "邮件、信封",
+    "key": "fa fa-envelope-open"
+  },
+  {
+    "name": "邮件、信封",
+    "key": "fa fa-envelope-open-o"
+  },
+  {
+    "name": "邮件、收件箱",
+    "key": "fa fa-inbox"
+  },
+  {
+    "name": "回复邮件",
+    "key": "fa fa-mail-reply"
+  },
+  {
+    "name": "发送邮件、分享",
+    "key": "fa fa-mail-forward"
+  },
+  {
+    "name": "发送、纸飞机",
+    "key": "fa fa-send"
+  },
+  {
+    "name": "发送、纸飞机",
+    "key": "fa fa-send-o"
+  },
+  {
+    "name": "分享",
+    "key": "fa fa-share-square"
+  },
+  {
+    "name": "分享",
+    "key": "fa fa-share-square-o"
+  },
+  {
+    "name": "分享",
+    "key": "fa fa-share-alt"
+  },
+  {
+    "name": "分享",
+    "key": "fa fa-share-alt-square"
+  },
+  {
+    "name": "外部链接、跳转",
+    "key": "fa fa-external-link"
+  },
+  {
+    "name": "外部链接、跳转",
+    "key": "fa fa-external-link-square"
+  },
+  {
+    "name": "评论、留言、对话",
+    "key": "fa fa-comment"
+  },
+  {
+    "name": "评论、留言、对话",
+    "key": "fa fa-comments"
+  },
+  {
+    "name": "评论、留言、对话",
+    "key": "fa fa-comment-o"
+  },
+  {
+    "name": "评论、留言、对话",
+    "key": "fa fa-comments-o"
+  },
+  {
+    "name": "评论、留言、对话",
+    "key": "fa fa-commenting"
+  },
+  {
+    "name": "评论、留言、对话",
+    "key": "fa fa-commenting-o"
+  },
+  {
+    "name": "磁力",
+    "key": "fa fa-magnet"
+  },
+  {
+    "name": "闪电",
+    "key": "fa fa-flash"
+  },
+  {
+    "name": "左边",
+    "key": "fa fa-hand-o-left"
+  },
+  {
+    "name": "右边",
+    "key": "fa fa-hand-o-right"
+  },
+  {
+    "name": "上边",
+    "key": "fa fa-hand-o-up"
+  },
+  {
+    "name": "下边",
+    "key": "fa fa-hand-o-down"
+  },
+  {
+    "name": "点赞",
+    "key": "fa fa-thumbs-o-up"
+  },
+  {
+    "name": "点赞",
+    "key": "fa fa-thumbs-up"
+  },
+  {
+    "name": "拍砖",
+    "key": "fa fa-thumbs-o-down"
+  },
+  {
+    "name": "拍砖",
+    "key": "fa fa-thumbs-down"
+  },
+  {
+    "name": "爱心",
+    "key": "fa fa-heart"
+  },
+  {
+    "name": "爱心",
+    "key": "fa fa-heart-o"
+  },
+  {
+    "name": "收藏、打分",
+    "key": "fa fa-star"
+  },
+  {
+    "name": "收藏、打分",
+    "key": "fa fa-star-half"
+  },
+  {
+    "name": "收藏、打分",
+    "key": "fa fa-star-o"
+  },
+  {
+    "name": "书签、收藏",
+    "key": "fa fa-bookmark"
+  },
+  {
+    "name": "图钉、置顶",
+    "key": "fa fa-thumb-tack"
+  },
+  {
+    "name": "证书、徽章",
+    "key": "fa fa-certificate"
+  },
+  {
+    "name": "书",
+    "key": "fa fa-book"
+  },
+  {
+    "name": "方块",
+    "key": "fa fa-cube"
+  },
+  {
+    "name": "方块",
+    "key": "fa fa-cubes"
+  },
+  {
+    "name": "礼物",
+    "key": "fa fa-gift"
+  },
+  {
+    "name": "生日蛋糕",
+    "key": "fa fa-birthday-cake"
+  },
+  {
+    "name": "钻石",
+    "key": "fa fa-diamond"
+  },
+  {
+    "name": "树木、圣诞树",
+    "key": "fa fa-tree"
+  },
+  {
+    "name": "笑脸、开心、高兴",
+    "key": "fa fa-smile-o"
+  },
+  {
+    "name": "无聊、平庸",
+    "key": "fa fa-meh-o"
+  },
+  {
+    "name": "哭脸、难过、伤心",
+    "key": "fa fa-frown-o"
+  },
+  {
+    "name": "奖杯、奖品",
+    "key": "fa fa-trophy"
+  },
+  {
+    "name": "啤酒",
+    "key": "fa fa-beer"
+  },
+  {
+    "name": "银行卡、信用卡",
+    "key": "fa fa-credit-card"
+  },
+  {
+    "name": "银行卡、信用卡",
+    "key": "fa fa-credit-card-alt"
+  },
+  {
+    "name": "信用卡",
+    "key": "fa fa-cc"
+  },
+  {
+    "name": "visa",
+    "key": "fa fa-cc-visa"
+  },
+  {
+    "name": "mastercard",
+    "key": "fa fa-cc-mastercard"
+  },
+  {
+    "name": "discover",
+    "key": "fa fa-cc-discover"
+  },
+  {
+    "name": "amex",
+    "key": "fa fa-cc-amex"
+  },
+  {
+    "name": "paypal",
+    "key": "fa fa-cc-paypal"
+  },
+  {
+    "name": "stripe",
+    "key": "fa fa-cc-stripe"
+  },
+  {
+    "name": "jcb",
+    "key": "fa fa-cc-jcb"
+  },
+  {
+    "name": "diners club",
+    "key": "fa fa-cc-diners-club"
+  },
+  {
+    "name": "钱、纸币、钞票",
+    "key": "fa fa-money"
+  },
+  {
+    "name": "欧元",
+    "key": "fa fa-euro"
+  },
+  {
+    "name": "英镑",
+    "key": "fa fa-gbp"
+  },
+  {
+    "name": "美元",
+    "key": "fa fa-dollar"
+  },
+  {
+    "name": "印度卢比",
+    "key": "fa fa-rupee"
+  },
+  {
+    "name": "人民币、日元",
+    "key": "fa fa-cny"
+  },
+  {
+    "name": "俄罗斯卢布",
+    "key": "fa fa-ruble"
+  },
+  {
+    "name": "韩元",
+    "key": "fa fa-won"
+  },
+  {
+    "name": "土耳其里拉",
+    "key": "fa fa-try"
+  },
+  {
+    "name": "比特币",
+    "key": "fa fa-bitcoin"
+  },
+  {
+    "name": "电影票",
+    "key": "fa fa-ticket"
+  },
+  {
+    "name": "树叶",
+    "key": "fa fa-leaf"
+  },
+  {
+    "name": "火",
+    "key": "fa fa-fire"
+  },
+  {
+    "name": "灭火器",
+    "key": "fa fa-fire-extinguisher"
+  },
+  {
+    "name": "眼睛、可见、显示",
+    "key": "fa fa-eye"
+  },
+  {
+    "name": "眼睛、不可见、隐藏",
+    "key": "fa fa-eye-slash"
+  },
+  {
+    "name": "用户",
+    "key": "fa fa-user"
+  },
+  {
+    "name": "用户",
+    "key": "fa fa-user-circle"
+  },
+  {
+    "name": "用户",
+    "key": "fa fa-user-circle-o"
+  },
+  {
+    "name": "用户",
+    "key": "fa fa-user-o"
+  },
+  {
+    "name": "添加用户",
+    "key": "fa fa-user-plus"
+  },
+  {
+    "name": "删除用户",
+    "key": "fa fa-user-times"
+  },
+  {
+    "name": "用户、女人、女性",
+    "key": "fa fa-female"
+  },
+  {
+    "name": "用户、男人、男性",
+    "key": "fa fa-male"
+  },
+  {
+    "name": "用户、儿童",
+    "key": "fa fa-child"
+  },
+  {
+    "name": "用户、医生",
+    "key": "fa fa-user-md"
+  },
+  {
+    "name": "用户、轮椅、病人",
+    "key": "fa fa-wheelchair"
+  },
+  {
+    "name": "用户、轮椅、病人",
+    "key": "fa fa-wheelchair-alt"
+  },
+  {
+    "name": "用户、盲人",
+    "key": "fa fa-blind"
+  },
+  {
+    "name": "用户",
+    "key": "fa fa-user-secret"
+  },
+  {
+    "name": "用户、街景",
+    "key": "fa fa-street-view"
+  },
+  {
+    "name": "用户、床、旅馆、酒店、睡觉、休息、病人",
+    "key": "fa fa-hotel"
+  },
+  {
+    "name": "用户组、群",
+    "key": "fa fa-group"
+  },
+  {
+    "name": "听诊器",
+    "key": "fa fa-stethoscope"
+  },
+  {
+    "name": "心跳、心率",
+    "key": "fa fa-heartbeat"
+  },
+  {
+    "name": "医院",
+    "key": "fa fa-hospital-o"
+  },
+  {
+    "name": "救护车",
+    "key": "fa fa-ambulance"
+  },
+  {
+    "name": "急救包、医药箱",
+    "key": "fa fa-medkit"
+  },
+  {
+    "name": "救生圈、游泳圈",
+    "key": "fa fa-life-bouy"
+  },
+  {
+    "name": "信号",
+    "key": "fa fa-signal"
+  },
+  {
+    "name": "旗帜",
+    "key": "fa fa-flag"
+  },
+  {
+    "name": "旗帜",
+    "key": "fa fa-flag-o"
+  },
+  {
+    "name": "旗帜",
+    "key": "fa fa-flag-checkered"
+  },
+  {
+    "name": "fa、font-awesome",
+    "key": "fa fa-fa"
+  },
+  {
+    "name": "扳手、设置",
+    "key": "fa fa-wrench"
+  },
+  {
+    "name": "滑块、设置",
+    "key": "fa fa-sliders"
+  },
+  {
+    "name": "齿轮、设置",
+    "key": "fa fa-gear"
+  },
+  {
+    "name": "齿轮、设置",
+    "key": "fa fa-gears"
+  },
+  {
+    "name": "省略号、更多",
+    "key": "fa fa-ellipsis-h"
+  },
+  {
+    "name": "更多",
+    "key": "fa fa-ellipsis-v"
+  },
+  {
+    "name": "首页、主页、家、房子、房屋",
+    "key": "fa fa-home"
+  },
+  {
+    "name": "购物车",
+    "key": "fa fa-shopping-cart"
+  },
+  {
+    "name": "购物车",
+    "key": "fa fa-cart-plus"
+  },
+  {
+    "name": "购物车",
+    "key": "fa fa-cart-arrow-down"
+  },
+  {
+    "name": "购物袋",
+    "key": "fa fa-shopping-bag"
+  },
+  {
+    "name": "购物篮",
+    "key": "fa fa-shopping-basket"
+  },
+  {
+    "name": "向左、左书名号",
+    "key": "fa fa-angle-double-left"
+  },
+  {
+    "name": "向左、返回",
+    "key": "fa fa-angle-left"
+  },
+  {
+    "name": "向左、返回",
+    "key": "fa fa-chevron-circle-left"
+  },
+  {
+    "name": "向左、返回",
+    "key": "fa fa-chevron-left"
+  },
+  {
+    "name": "向左、返回",
+    "key": "fa fa-arrow-left"
+  },
+  {
+    "name": "向左",
+    "key": "fa fa-long-arrow-left"
+  },
+  {
+    "name": "向左、返回",
+    "key": "fa fa-arrow-circle-left"
+  },
+  {
+    "name": "向左",
+    "key": "fa fa-arrow-circle-o-left"
+  },
+  {
+    "name": "向右、右书名号",
+    "key": "fa fa-angle-double-right"
+  },
+  {
+    "name": "向右",
+    "key": "fa fa-angle-right"
+  },
+  {
+    "name": "向右",
+    "key": "fa fa-chevron-right"
+  },
+  {
+    "name": "向右",
+    "key": "fa fa-chevron-circle-right"
+  },
+  {
+    "name": "向右",
+    "key": "fa fa-arrow-right"
+  },
+  {
+    "name": "向右",
+    "key": "fa fa-long-arrow-right"
+  },
+  {
+    "name": "向右",
+    "key": "fa fa-arrow-circle-right"
+  },
+  {
+    "name": "向右",
+    "key": "fa fa-arrow-circle-o-right"
+  },
+  {
+    "name": "向上",
+    "key": "fa fa-angle-double-up"
+  },
+  {
+    "name": "向上",
+    "key": "fa fa-angle-up"
+  },
+  {
+    "name": "向上",
+    "key": "fa fa-chevron-up"
+  },
+  {
+    "name": "向上",
+    "key": "fa fa-chevron-circle-up"
+  },
+  {
+    "name": "向上",
+    "key": "fa fa-arrow-up"
+  },
+  {
+    "name": "向上",
+    "key": "fa fa-long-arrow-up"
+  },
+  {
+    "name": "向上",
+    "key": "fa fa-arrow-up"
+  },
+  {
+    "name": "上传、导入、向上",
+    "key": "fa fa-arrow-circle-o-up"
+  },
+  {
+    "name": "向上",
+    "key": "fa level-up"
+  },
+  {
+    "name": "上传、导入",
+    "key": "fa fa-upload"
+  },
+  {
+    "name": "向下",
+    "key": "fa fa-angle-double-down"
+  },
+  {
+    "name": "向下",
+    "key": "fa fa-angle-down"
+  },
+  {
+    "name": "向下",
+    "key": "fa fa-chevron-down"
+  },
+  {
+    "name": "向下",
+    "key": "fa fa-chevron-circle-down"
+  },
+  {
+    "name": "向下",
+    "key": "fa fa-arrow-down"
+  },
+  {
+    "name": "向下",
+    "key": "fa fa-long-arrow-down"
+  },
+  {
+    "name": "向下",
+    "key": "fa fa-arrow-circle-down"
+  },
+  {
+    "name": "下载、导出、向下",
+    "key": "fa fa-arrow-circle-o-down"
+  },
+  {
+    "name": "向下",
+    "key": "fa fa-level-down"
+  },
+  {
+    "name": "下载、导出",
+    "key": "fa fa-download"
+  },
+  {
+    "name": "云、上传、导入",
+    "key": "fa fa-cloud-upload"
+  },
+  {
+    "name": "云、下载、导出",
+    "key": "fa fa-cloud-download"
+  },
+  {
+    "name": "云",
+    "key": "fa fa-cloud"
+  },
+  {
+    "name": "排序",
+    "key": "fa fa-unsorted"
+  },
+  {
+    "name": "字典升序排序",
+    "key": "fa fa-sort-alpha-asc"
+  },
+  {
+    "name": "字典降序排序",
+    "key": "fa fa-sort-alpha-desc"
+  },
+  {
+    "name": "数量升序排序",
+    "key": "fa fa-sort-amount-asc"
+  },
+  {
+    "name": "数量降序排序",
+    "key": "fa fa-sort-amount-desc"
+  },
+  {
+    "name": "数字升序排序",
+    "key": "fa fa-sort-numeric-asc"
+  },
+  {
+    "name": "数字降序排序",
+    "key": "fa fa-sort-numeric-desc"
+  },
+  {
+    "name": "上拉、升序",
+    "key": "fa fa-caret-up"
+  },
+  {
+    "name": "上拉",
+    "key": "fa fa-toggle-up"
+  },
+  {
+    "name": "下拉、降序",
+    "key": "fa fa-caret-down"
+  },
+  {
+    "name": "下拉",
+    "key": "fa fa-toggle-down"
+  },
+  {
+    "name": "向左",
+    "key": "fa fa-caret-left"
+  },
+  {
+    "name": "向左",
+    "key": "fa fa-toggle-left"
+  },
+  {
+    "name": "向右",
+    "key": "fa fa-caret-right"
+  },
+  {
+    "name": "向右",
+    "key": "fa fa-toggle-right"
+  },
+  {
+    "name": "文件夹、目录",
+    "key": "fa fa-folder"
+  },
+  {
+    "name": "文件夹、目录",
+    "key": "fa fa-folder-o"
+  },
+  {
+    "name": "文件夹打开、目录打开",
+    "key": "fa fa-folder-open"
+  },
+  {
+    "name": "文件夹打开、目录打开",
+    "key": "fa fa-folder-open-o"
+  },
+  {
+    "name": "文件、档案、归档",
+    "key": "fa fa-archive"
+  },
+  {
+    "name": "文件、压缩包、zip、rar",
+    "key": "fa fa-file-zip-o"
+  },
+  {
+    "name": "文件、pdf",
+    "key": "fa fa-file-pdf-o"
+  },
+  {
+    "name": "文件、图片",
+    "key": "fa fa-file-photo-o"
+  },
+  {
+    "name": "文件、音频",
+    "key": "fa fa-file-sound-o"
+  },
+  {
+    "name": "文件、视频",
+    "key": "fa fa-file-movie-o"
+  },
+  {
+    "name": "文件、源代码",
+    "key": "fa fa-file-code-o"
+  },
+  {
+    "name": "文件、word、office",
+    "key": "fa fa-file-word-o"
+  },
+  {
+    "name": "文件、excel、office",
+    "key": "fa fa-file-excel-o"
+  },
+  {
+    "name": "文件、powerpoint、ppt、office",
+    "key": "fa fa-file-powerpoint-o"
+  },
+  {
+    "name": "数据库",
+    "key": "fa fa-database"
+  },
+  {
+    "name": "文件",
+    "key": "fa fa-file"
+  },
+  {
+    "name": "文件",
+    "key": "fa fa-file-o"
+  },
+  {
+    "name": "文本文件",
+    "key": "fa fa-file-text"
+  },
+  {
+    "name": "文本文件",
+    "key": "fa fa-file-text-o"
+  },
+  {
+    "name": "字体、文字",
+    "key": "fa fa-font"
+  },
+  {
+    "name": "字号",
+    "key": "fa fa-header"
+  },
+  {
+    "name": "加粗、粗体",
+    "key": "fa fa-bold"
+  },
+  {
+    "name": "倾斜、斜体",
+    "key": "fa fa-italic"
+  },
+  {
+    "name": "删除线",
+    "key": "fa fa-strikethrough"
+  },
+  {
+    "name": "下划线",
+    "key": "fa fa-underline"
+  },
+  {
+    "name": "左双引号",
+    "key": "fa fa-quote-left"
+  },
+  {
+    "name": "右双引号",
+    "key": "fa fa-quote-right"
+  },
+  {
+    "name": "魔术棒",
+    "key": "fa fa-magic"
+  },
+  {
+    "name": "超链接、锁链",
+    "key": "fa fa-chain"
+  },
+  {
+    "name": "取消超链接",
+    "key": "fa fa-unlink"
+  },
+  {
+    "name": "锚",
+    "key": "fa fa-anchor"
+  },
+  {
+    "name": "字顶距",
+    "key": "fa fa-text-height"
+  },
+  {
+    "name": "字间距",
+    "key": "fa fa-text-width"
+  },
+  {
+    "name": "左对齐",
+    "key": "fa fa-align-left"
+  },
+  {
+    "name": "居中对齐",
+    "key": "fa fa-align-center"
+  },
+  {
+    "name": "右对齐",
+    "key": "fa fa-align-right"
+  },
+  {
+    "name": "分散对齐、两端对齐",
+    "key": "fa fa-align-justify"
+  },
+  {
+    "name": "菜单、列表",
+    "key": "fa fa-bars"
+  },
+  {
+    "name": "列表",
+    "key": "fa fa-list-ul"
+  },
+  {
+    "name": "列表",
+    "key": "fa fa-list-ol"
+  },
+  {
+    "name": "列表",
+    "key": "fa fa-list"
+  },
+  {
+    "name": "列表",
+    "key": "fa fa-list-alt"
+  },
+  {
+    "name": "任务列表",
+    "key": "fa fa-tasks"
+  },
+  {
+    "name": "表格、列表",
+    "key": "fa fa-th-list"
+  },
+  {
+    "name": "表格",
+    "key": "fa fa-th-large"
+  },
+  {
+    "name": "表格",
+    "key": "fa fa-table"
+  },
+  {
+    "name": "表格",
+    "key": "fa fa-th"
+  },
+  {
+    "name": "表格",
+    "key": "fa fa-columns"
+  },
+  {
+    "name": "减少缩进",
+    "key": "fa fa-dedent"
+  },
+  {
+    "name": "增加缩进",
+    "key": "fa fa-indent"
+  },
+  {
+    "name": "剪刀、剪切",
+    "key": "fa fa-cut"
+  },
+  {
+    "name": "复制、拷贝",
+    "key": "fa fa-copy"
+  },
+  {
+    "name": "复制、拷贝、克隆",
+    "key": "fa fa-clone"
+  },
+  {
+    "name": "粘贴",
+    "key": "fa fa-paste"
+  },
+  {
+    "name": "曲别针、附件",
+    "key": "fa fa-paperclip"
+  },
+  {
+    "name": "橡皮擦",
+    "key": "fa fa-eraser"
+  },
+  {
+    "name": "上标",
+    "key": "fa fa-superscript"
+  },
+  {
+    "name": "下标",
+    "key": "fa fa-subscript"
+  },
+  {
+    "name": "编辑",
+    "key": "fa fa-pencil-square"
+  },
+  {
+    "name": "编辑",
+    "key": "fa fa-edit"
+  },
+  {
+    "name": "编辑、铅笔",
+    "key": "fa fa-pencil"
+  },
+  {
+    "name": "保存、软盘",
+    "key": "fa fa-floppy-o"
+  },
+  {
+    "name": "移动、拖拽",
+    "key": "fa fa-arrows"
+  },
+  {
+    "name": "移动、拖拽",
+    "key": "fa fa-arrows-alt"
+  },
+  {
+    "name": "纵向移动、纵向拖拽",
+    "key": "fa fa-arrows-v"
+  },
+  {
+    "name": "横向移动、横向拖拽",
+    "key": "fa fa-arrows-h"
+  },
+  {
+    "name": "展开",
+    "key": "fa fa-expand"
+  },
+  {
+    "name": "收缩",
+    "key": "fa fa-compress"
+  },
+  {
+    "name": "交换",
+    "key": "fa fa-exchange"
+  },
+  {
+    "name": "硬盘、磁盘、存储",
+    "key": "fa fa-hdd-o"
+  },
+  {
+    "name": "芯片",
+    "key": "fa fa-microchip"
+  },
+  {
+    "name": "打印机",
+    "key": "fa fa-print"
+  },
+  {
+    "name": "传真、电话、座机",
+    "key": "fa fa-fax"
+  },
+  {
+    "name": "插头、插件",
+    "key": "fa fa-plug"
+  },
+  {
+    "name": "USB",
+    "key": "fa fa-usb"
+  },
+  {
+    "name": "wifi",
+    "key": "fa fa-wifi"
+  },
+  {
+    "name": "蓝牙",
+    "key": "fa fa-bluetooth"
+  },
+  {
+    "name": "蓝牙",
+    "key": "fa fa-bluetooth-b"
+  },
+  {
+    "name": "计算器",
+    "key": "fa fa-calculator"
+  },
+  {
+    "name": "游戏手柄",
+    "key": "fa fa-gamepad"
+  },
+  {
+    "name": "键盘",
+    "key": "fa fa-keyboard-o"
+  },
+  {
+    "name": "公文包、手提包、手提箱",
+    "key": "fa fa-briefcase"
+  },
+  {
+    "name": "手提箱、行李箱",
+    "key": "fa fa-suitcase"
+  },
+  {
+    "name": "历史",
+    "key": "fa fa-history"
+  },
+  {
+    "name": "日期、日历",
+    "key": "fa fa-clock-o"
+  },
+  {
+    "name": "日期、日历",
+    "key": "fa fa-calendar"
+  },
+  {
+    "name": "日期、日历",
+    "key": "fa fa-calendar-o"
+  },
+  {
+    "name": "日期、日历",
+    "key": "fa fa-calendar-plus-o"
+  },
+  {
+    "name": "日期、日历",
+    "key": "fa fa-calendar-minus-o"
+  },
+  {
+    "name": "日期、日历",
+    "key": "fa fa-calendar-times-o"
+  },
+  {
+    "name": "日期、日历",
+    "key": "fa fa-calendar-check-o"
+  },
+  {
+    "name": "拼图",
+    "key": "fa fa-puzzle-piece"
+  },
+  {
+    "name": "二维码",
+    "key": "fa fa-qrcode"
+  },
+  {
+    "name": "条码",
+    "key": "fa fa-barcode"
+  },
+  {
+    "name": "柱状图",
+    "key": "fa fa-bar-chart-o"
+  },
+  {
+    "name": "面积图",
+    "key": "fa fa-area-chart"
+  },
+  {
+    "name": "饼状图",
+    "key": "fa fa-pie-chart"
+  },
+  {
+    "name": "折线图",
+    "key": "fa fa-line-chart"
+  },
+  {
+    "name": "正方形",
+    "key": "fa fa-square"
+  },
+  {
+    "name": "电视机、显示器",
+    "key": "fa fa-tv"
+  },
+  {
+    "name": "桌面、显示器、台式机、台式电脑",
+    "key": "fa fa-desktop"
+  },
+  {
+    "name": "笔记本电脑",
+    "key": "fa fa-laptop"
+  },
+  {
+    "name": "平板电脑",
+    "key": "fa fa-tablet"
+  },
+  {
+    "name": "手机",
+    "key": "fa fa-mobile-phone"
+  },
+  {
+    "name": "命令行、终端、Shell",
+    "key": "fa fa-terminal"
+  },
+  {
+    "name": "代码",
+    "key": "fa fa-code"
+  },
+  {
+    "name": "代码、fork、分支",
+    "key": "fa fa-code-fork"
+  },
+  {
+    "name": "代码、bug、虫子",
+    "key": "fa fa-bug"
+  },
+  {
+    "name": "标签",
+    "key": "fa fa-tag"
+  },
+  {
+    "name": "标签",
+    "key": "fa fa-tags"
+  },
+  {
+    "name": "校正、调整、黑白、对比度",
+    "key": "fa fa-adjust"
+  },
+  {
+    "name": "水滴",
+    "key": "fa fa-tint"
+  },
+  {
+    "name": "喇叭、扩音器",
+    "key": "fa fa-bullhorn"
+  },
+  {
+    "name": "铃铛",
+    "key": "fa fa-bell"
+  },
+  {
+    "name": "铃铛",
+    "key": "fa fa-bell-o"
+  },
+  {
+    "name": "铃铛、静音",
+    "key": "fa fa-bell-slash"
+  },
+  {
+    "name": "铃铛、静音",
+    "key": "fa fa-bell-slash-o"
+  },
+  {
+    "name": "电灯、灯泡",
+    "key": "fa fa-lightbulb-o"
+  },
+  {
+    "name": "咖啡、Java",
+    "key": "fa fa-coffee"
+  },
+  {
+    "name": "餐具、刀叉",
+    "key": "fa fa-cutlery"
+  },
+  {
+    "name": "地图、定位、标记",
+    "key": "fa fa-map-marker"
+  },
+  {
+    "name": "指南针",
+    "key": "fa fa-compass"
+  },
+  {
+    "name": "太阳",
+    "key": "fa fa-sun-o"
+  },
+  {
+    "name": "月亮",
+    "key": "fa fa-moon-o"
+  },
+  {
+    "name": "地球",
+    "key": "fa fa-globe"
+  },
+  {
+    "name": "大学、银行",
+    "key": "fa fa-institution"
+  },
+  {
+    "name": "学位帽",
+    "key": "fa fa-mortar-board"
+  },
+  {
+    "name": "建筑、大厦",
+    "key": "fa fa-building"
+  },
+  {
+    "name": "建筑、大厦",
+    "key": "fa fa-building-o"
+  },
+  {
+    "name": "路",
+    "key": "fa fa-road"
+  },
+  {
+    "name": "火箭",
+    "key": "fa fa-rocket"
+  },
+  {
+    "name": "航天飞机",
+    "key": "fa fa-space-shuttle"
+  },
+  {
+    "name": "飞机、战斗机",
+    "key": "fa fa-fighter-jet"
+  },
+  {
+    "name": "飞机",
+    "key": "fa fa-plane"
+  },
+  {
+    "name": "停机坪",
+    "key": "fa fa-h-square"
+  },
+  {
+    "name": "卡车",
+    "key": "fa fa-truck"
+  },
+  {
+    "name": "小汽车",
+    "key": "fa fa-car"
+  },
+  {
+    "name": "出租车、TAXI",
+    "key": "fa fa-taxi"
+  },
+  {
+    "name": "公交车",
+    "key": "fa fa-bus"
+  },
+  {
+    "name": "轮船",
+    "key": "fa fa-ship"
+  },
+  {
+    "name": "火车",
+    "key": "fa fa-train"
+  },
+  {
+    "name": "地铁",
+    "key": "fa fa-subway"
+  },
+  {
+    "name": "摩托车",
+    "key": "fa fa-motorcycle"
+  },
+  {
+    "name": "自行车",
+    "key": "fa fa-bicycle"
+  },
+  {
+    "name": "法律、锤子",
+    "key": "fa fa-legal"
+  },
+  {
+    "name": "法律、天平",
+    "key": "fa fa-balance-scale"
+  },
+  {
+    "name": "仪表盘",
+    "key": "fa fa-dashboard"
+  },
+  {
+    "name": "正在加载",
+    "key": "fa fa-spinner"
+  },
+  {
+    "name": "询问、帮助、问题",
+    "key": "fa fa-question"
+  },
+  {
+    "name": "询问、帮助、问题",
+    "key": "fa fa-question-circle"
+  },
+  {
+    "name": "询问、帮助、问题",
+    "key": "fa fa-question-circle-o"
+  },
+  {
+    "name": "提示、信息、帮助",
+    "key": "fa fa-info"
+  },
+  {
+    "name": "提示、信息、帮助",
+    "key": "fa fa-info-circle"
+  },
+  {
+    "name": "提示、信息、帮助、警告",
+    "key": "fa fa-exclamation"
+  },
+  {
+    "name": "提示、信息、帮助、警告",
+    "key": "fa fa-exclamation-circle"
+  },
+  {
+    "name": "提示、信息、帮助、警告",
+    "key": "fa fa-warning"
+  },
+  {
+    "name": "焦点、准星、靶心、瞄准",
+    "key": "fa fa-crosshairs"
+  },
+  {
+    "name": "靶心",
+    "key": "fa fa-bullseye"
+  },
+  {
+    "name": "组织架构",
+    "key": "fa fa-sitemap"
+  },
+  {
+    "name": "雨伞、保护",
+    "key": "fa fa-umbrella"
+  },
+  {
+    "name": "盾牌、保护",
+    "key": "fa fa-shield"
+  },
+  {
+    "name": "twitter、推特",
+    "key": "fa fa-twitter-square"
+  },
+  {
+    "name": "facebook、非死不可",
+    "key": "fa fa-facebook-square"
+  },
+  {
+    "name": "facebook、非死不可",
+    "key": "fa fa-facebook-official"
+  },
+  {
+    "name": "youtube",
+    "key": "fa fa-youtube-square"
+  },
+  {
+    "name": "youtube",
+    "key": "fa fa-youtube"
+  },
+  {
+    "name": "youtube",
+    "key": "fa fa-youtube-play"
+  },
+  {
+    "name": "xing",
+    "key": "fa fa-xing-square"
+  },
+  {
+    "name": "xing",
+    "key": "fa fa-xing"
+  },
+  {
+    "name": "linkedin、领英",
+    "key": "fa fa-linkedin-square"
+  },
+  {
+    "name": "linkedin、领英",
+    "key": "fa fa-linkedin"
+  },
+  {
+    "name": "github",
+    "key": "fa fa-github-square"
+  },
+  {
+    "name": "github",
+    "key": "fa fa-github"
+  },
+  {
+    "name": "github",
+    "key": "fa fa-github-alt"
+  },
+  {
+    "name": "git",
+    "key": "fa fa-git"
+  },
+  {
+    "name": "git",
+    "key": "fa fa-git-square"
+  },
+  {
+    "name": "pinterest",
+    "key": "fa fa-pinterest"
+  },
+  {
+    "name": "pinterest",
+    "key": "fa fa-pinterest-p"
+  },
+  {
+    "name": "pinterest",
+    "key": "fa fa-pinterest-square"
+  },
+  {
+    "name": "google、谷歌",
+    "key": "fa fa-google"
+  },
+  {
+    "name": "google+、谷歌加",
+    "key": "fa fa-google-plus-square"
+  },
+  {
+    "name": "google+、谷歌加",
+    "key": "fa fa-google-plus-circle"
+  },
+  {
+    "name": "google+、谷歌加",
+    "key": "fa fa-google-plus"
+  },
+  {
+    "name": "google、谷歌钱包",
+    "key": "fa fa-google-wallet"
+  },
+  {
+    "name": "maxcdn",
+    "key": "fa fa-maxcdn"
+  },
+  {
+    "name": "dropbox",
+    "key": "fa fa-dropbox"
+  },
+  {
+    "name": "stack-overflow",
+    "key": "fa fa-stack-overflow"
+  },
+  {
+    "name": "instagram",
+    "key": "fa fa-instagram"
+  },
+  {
+    "name": "flickr",
+    "key": "fa fa-flickr"
+  },
+  {
+    "name": "adn",
+    "key": "fa fa-adn"
+  },
+  {
+    "name": "bitbucket",
+    "key": "fa fa-bitbucket-square"
+  },
+  {
+    "name": "bitbucket",
+    "key": "fa fa-bitbucket"
+  },
+  {
+    "name": "tumblr、汤不热",
+    "key": "fa fa-tumblr-square"
+  },
+  {
+    "name": "tumblr、汤不热",
+    "key": "fa fa-tumblr"
+  },
+  {
+    "name": "apple、苹果",
+    "key": "fa fa-apple"
+  },
+  {
+    "name": "windows",
+    "key": "fa fa-windows"
+  },
+  {
+    "name": "android、安卓",
+    "key": "fa fa-android"
+  },
+  {
+    "name": "linux",
+    "key": "fa fa-linux"
+  },
+  {
+    "name": "dribbble",
+    "key": "fa fa-dribbble"
+  },
+  {
+    "name": "skype",
+    "key": "fa fa-skype"
+  },
+  {
+    "name": "foursquare",
+    "key": "fa fa-foursquare"
+  },
+  {
+    "name": "trello",
+    "key": "fa fa-trello"
+  },
+  {
+    "name": "gittip",
+    "key": "fa fa-gittip"
+  },
+  {
+    "name": "gratipay",
+    "key": "fa fa-gratipay"
+  },
+  {
+    "name": "vk",
+    "key": "fa fa-vk"
+  },
+  {
+    "name": "weibo、微博",
+    "key": "fa fa-weibo"
+  },
+  {
+    "name": "renren、人人网",
+    "key": "fa fa-renren"
+  },
+  {
+    "name": "pagelines",
+    "key": "fa fa-pagelines"
+  },
+  {
+    "name": "stack-exchange",
+    "key": "fa fa-stack-exchange"
+  },
+  {
+    "name": "vimeo",
+    "key": "fa fa-vimeo-square"
+  },
+  {
+    "name": "slack",
+    "key": "fa fa-slack"
+  },
+  {
+    "name": "wordpress",
+    "key": "fa fa-wordpress"
+  },
+  {
+    "name": "openid",
+    "key": "fa fa-openid"
+  },
+  {
+    "name": "yahoo、雅虎",
+    "key": "fa fa-yahoo"
+  },
+  {
+    "name": "etsy",
+    "key": "fa fa-etsy"
+  },
+  {
+    "name": "quora",
+    "key": "fa fa-quora"
+  },
+  {
+    "name": "reddit",
+    "key": "fa fa-reddit"
+  },
+  {
+    "name": "reddit",
+    "key": "fa fa-reddit-square"
+  },
+  {
+    "name": "stumbleupon",
+    "key": "fa fa-stumbleupon"
+  },
+  {
+    "name": "stumbleupon",
+    "key": "fa fa-stumbleupon-circle"
+  },
+  {
+    "name": "html5",
+    "key": "fa fa-html5"
+  },
+  {
+    "name": "css3",
+    "key": "fa fa-css3"
+  },
+  {
+    "name": "delicious",
+    "key": "fa fa-delicious"
+  },
+  {
+    "name": "digg",
+    "key": "fa fa-digg"
+  },
+  {
+    "name": "pied-piper",
+    "key": "fa fa-pied-piper-pp"
+  },
+  {
+    "name": "pied-piper",
+    "key": "fa fa-pied-piper-alt"
+  },
+  {
+    "name": "drupal",
+    "key": "fa fa-drupal"
+  },
+  {
+    "name": "joomla",
+    "key": "fa fa-joomla"
+  },
+  {
+    "name": "爪印、百度、baidu",
+    "key": "fa fa-paw"
+  },
+  {
+    "name": "behance",
+    "key": "fa fa-behance"
+  },
+  {
+    "name": "behance",
+    "key": "fa fa-behance-square"
+  },
+  {
+    "name": "steam",
+    "key": "fa fa-steam"
+  },
+  {
+    "name": "steam",
+    "key": "fa fa-steam-square"
+  },
+  {
+    "name": "telegram",
+    "key": "fa fa-telegram"
+  },
+  {
+    "name": "spotify",
+    "key": "fa fa-spotify"
+  },
+  {
+    "name": "ravelry",
+    "key": "fa fa-ravelry"
+  },
+  {
+    "name": "bandcamp",
+    "key": "fa fa-bandcamp"
+  },
+  {
+    "name": "deviantart",
+    "key": "fa fa-deviantart"
+  },
+  {
+    "name": "soundcloud",
+    "key": "fa fa-soundcloud"
+  },
+  {
+    "name": "vine",
+    "key": "fa fa-vine"
+  },
+  {
+    "name": "codepen",
+    "key": "fa fa-codepen"
+  },
+  {
+    "name": "jsfiddle",
+    "key": "fa fa-jsfiddle"
+  },
+  {
+    "name": "腾讯微博",
+    "key": "fa fa-tencent-weibo"
+  },
+  {
+    "name": "QQ",
+    "key": "fa fa-qq"
+  },
+  {
+    "name": "微信",
+    "key": "fa fa-wechat"
+  },
+  {
+    "name": "y combinator",
+    "key": "fa fa-yc-square"
+  },
+  {
+    "name": "y combinator",
+    "key": "fa fa-yc"
+  },
+  {
+    "name": "wpexplorer",
+    "key": "fa fa-wpexplorer"
+  },
+  {
+    "name": "meetup",
+    "key": "fa fa-meetup"
+  },
+  {
+    "name": "wikipedia",
+    "key": "fa fa-wikipedia-w"
+  },
+  {
+    "name": "tripadvisor、猫途鹰",
+    "key": "fa fa-tripadvisor"
+  },
+  {
+    "name": "sellsy",
+    "key": "fa fa-sellsy"
+  },
+  {
+    "name": "eercast",
+    "key": "fa fa-eercast"
+  },
+  {
+    "name": "viadeo",
+    "key": "fa fa-viadeo"
+  },
+  {
+    "name": "viadeo-square",
+    "key": "fa fa-viadeo-square"
+  },
+  {
+    "name": "snapchat",
+    "key": "fa fa-snapchat"
+  },
+  {
+    "name": "snapchat-ghost",
+    "key": "fa fa-snapchat-ghost"
+  },
+  {
+    "name": "snapchat-square",
+    "key": "fa fa-snapchat-square"
+  },
+  {
+    "name": "twitch",
+    "key": "fa fa-twitch"
+  },
+  {
+    "name": "yelp",
+    "key": "fa fa-yelp"
+  },
+  {
+    "name": "paypal",
+    "key": "fa fa-paypal"
+  },
+  {
+    "name": "lastfm",
+    "key": "fa fa-lastfm"
+  },
+  {
+    "name": "lastfm-square",
+    "key": "fa fa-lastfm-square"
+  },
+  {
+    "name": "ioxhost",
+    "key": "fa fa-ioxhost"
+  },
+  {
+    "name": "imdb",
+    "key": "fa fa-imdb"
+  },
+  {
+    "name": "dashcube",
+    "key": "fa fa-dashcube"
+  },
+  {
+    "name": "paragraph",
+    "key": "fa fa-paragraph"
+  },
+  {
+    "name": "bomb",
+    "key": "fa fa-bomb"
+  },
+  {
+    "name": "soccer-ball-o",
+    "key": "fa fa-soccer-ball-o"
+  },
+  {
+    "name": "tty",
+    "key": "fa fa-tty"
+  },
+  {
+    "name": "binoculars",
+    "key": "fa fa-binoculars"
+  },
+  {
+    "name": "slideshare",
+    "key": "fa fa-slideshare"
+  },
+  {
+    "name": "newspaper-o",
+    "key": "fa fa-newspaper-o"
+  },
+  {
+    "name": "copyright",
+    "key": "fa fa-copyright"
+  },
+  {
+    "name": "at",
+    "key": "fa fa-at"
+  },
+  {
+    "name": "eyedropper",
+    "key": "fa fa-eyedropper"
+  },
+  {
+    "name": "paint-brush",
+    "key": "fa fa-paint-brush"
+  },
+  {
+    "name": "angellist",
+    "key": "fa fa-angellist"
+  },
+  {
+    "name": "shekel",
+    "key": "fa fa-shekel"
+  },
+  {
+    "name": "meanpath",
+    "key": "fa fa-meanpath"
+  },
+  {
+    "name": "buysellads",
+    "key": "fa fa-buysellads"
+  },
+  {
+    "name": "connectdevelop",
+    "key": "fa fa-connectdevelop"
+  },
+  {
+    "name": "forumbee",
+    "key": "fa fa-forumbee"
+  },
+  {
+    "name": "leanpub",
+    "key": "fa fa-leanpub"
+  },
+  {
+    "name": "shirtsinbulk",
+    "key": "fa fa-shirtsinbulk"
+  },
+  {
+    "name": "simplybuilt",
+    "key": "fa fa-simplybuilt"
+  },
+  {
+    "name": "skyatlas",
+    "key": "fa fa-skyatlas"
+  },
+  {
+    "name": "venus",
+    "key": "fa fa-venus"
+  },
+  {
+    "name": "mars",
+    "key": "fa fa-mars"
+  },
+  {
+    "name": "mercury",
+    "key": "fa fa-mercury"
+  },
+  {
+    "name": "intersex",
+    "key": "fa fa-intersex"
+  },
+  {
+    "name": "transgender-alt",
+    "key": "fa fa-transgender-alt"
+  },
+  {
+    "name": "venus-double",
+    "key": "fa fa-venus-double"
+  },
+  {
+    "name": "mars-double",
+    "key": "fa fa-mars-double"
+  },
+  {
+    "name": "venus-mars",
+    "key": "fa fa-venus-mars"
+  },
+  {
+    "name": "mars-stroke",
+    "key": "fa fa-mars-stroke"
+  },
+  {
+    "name": "mars-stroke-v",
+    "key": "fa fa-mars-stroke-v"
+  },
+  {
+    "name": "mars-stroke-h",
+    "key": "fa fa-mars-stroke-h"
+  },
+  {
+    "name": "neuter",
+    "key": "fa fa-neuter"
+  },
+  {
+    "name": "genderless",
+    "key": "fa fa-genderless"
+  },
+  {
+    "name": "whatsapp",
+    "key": "fa fa-whatsapp"
+  },
+  {
+    "name": "server",
+    "key": "fa fa-server"
+  },
+  {
+    "name": "viacoin",
+    "key": "fa fa-viacoin"
+  },
+  {
+    "name": "medium",
+    "key": "fa fa-medium"
+  },
+  {
+    "name": "optin-monster",
+    "key": "fa fa-optin-monster"
+  },
+  {
+    "name": "opencart",
+    "key": "fa fa-opencart"
+  },
+  {
+    "name": "expeditedssl",
+    "key": "fa fa-expeditedssl"
+  },
+  {
+    "name": "mouse-pointer",
+    "key": "fa fa-mouse-pointer"
+  },
+  {
+    "name": "i-cursor",
+    "key": "fa fa-i-cursor"
+  },
+  {
+    "name": "object-group",
+    "key": "fa fa-object-group"
+  },
+  {
+    "name": "object-ungroup",
+    "key": "fa fa-object-ungroup"
+  },
+  {
+    "name": "sticky-note",
+    "key": "fa fa-sticky-note"
+  },
+  {
+    "name": "sticky-note-o",
+    "key": "fa fa-sticky-note-o"
+  },
+  {
+    "name": "沙漏、倒计时、0%",
+    "key": "fa fa-hourglass-o"
+  },
+  {
+    "name": "沙漏、倒计时、25%",
+    "key": "fa fa-hourglass-1"
+  },
+  {
+    "name": "沙漏、倒计时、50%",
+    "key": "fa fa-hourglass-2"
+  },
+  {
+    "name": "沙漏、倒计时、75%",
+    "key": "fa fa-hourglass-3"
+  },
+  {
+    "name": "沙漏、倒计时、100%",
+    "key": "fa fa-hourglass"
+  },
+  {
+    "name": "电池、电量、100%",
+    "key": "fa fa-battery-4"
+  },
+  {
+    "name": "电池、电量、75%",
+    "key": "fa fa-battery-3"
+  },
+  {
+    "name": "电池、电量、50%",
+    "key": "fa fa-battery-2"
+  },
+  {
+    "name": "电池、电量、25%",
+    "key": "fa fa-battery-1"
+  },
+  {
+    "name": "电池、电量、0%",
+    "key": "fa fa-battery-0"
+  },
+  {
+    "name": "温度计、100%",
+    "key": "fa fa-thermometer-4"
+  },
+  {
+    "name": "温度计、75%",
+    "key": "fa fa-thermometer-3"
+  },
+  {
+    "name": "温度计、50%",
+    "key": "fa fa-thermometer-2"
+  },
+  {
+    "name": "温度计、25%",
+    "key": "fa fa-thermometer-1"
+  },
+  {
+    "name": "温度计、0%",
+    "key": "fa fa-thermometer-0"
+  },
+  {
+    "name": "hand-grab-o",
+    "key": "fa fa-hand-grab-o"
+  },
+  {
+    "name": "hand-stop-o",
+    "key": "fa fa-hand-stop-o"
+  },
+  {
+    "name": "hand-scissors-o",
+    "key": "fa fa-hand-scissors-o"
+  },
+  {
+    "name": "hand-lizard-o",
+    "key": "fa fa-hand-lizard-o"
+  },
+  {
+    "name": "hand-spock-o",
+    "key": "fa fa-hand-spock-o"
+  },
+  {
+    "name": "hand-pointer-o",
+    "key": "fa fa-hand-pointer-o"
+  },
+  {
+    "name": "hand-peace-o",
+    "key": "fa fa-hand-peace-o"
+  },
+  {
+    "name": "trademark",
+    "key": "fa fa-trademark"
+  },
+  {
+    "name": "registered",
+    "key": "fa fa-registered"
+  },
+  {
+    "name": "creative-commons",
+    "key": "fa fa-creative-commons"
+  },
+  {
+    "name": "gg",
+    "key": "fa fa-gg"
+  },
+  {
+    "name": "gg-circle",
+    "key": "fa fa-gg-circle"
+  },
+  {
+    "name": "odnoklassniki",
+    "key": "fa fa-odnoklassniki"
+  },
+  {
+    "name": "odnoklassniki-square",
+    "key": "fa fa-odnoklassniki-square"
+  },
+  {
+    "name": "get-pocket",
+    "key": "fa fa-get-pocket"
+  },
+  {
+    "name": "浏览器、safari",
+    "key": "fa fa-safari"
+  },
+  {
+    "name": "浏览器、chrome",
+    "key": "fa fa-chrome"
+  },
+  {
+    "name": "浏览器、firefox、火狐",
+    "key": "fa fa-firefox"
+  },
+  {
+    "name": "浏览器、opera",
+    "key": "fa fa-opera"
+  },
+  {
+    "name": "浏览器、IE",
+    "key": "fa fa-internet-explorer"
+  },
+  {
+    "name": "浏览器、edge",
+    "key": "fa fa-edge"
+  },
+  {
+    "name": "contao",
+    "key": "fa fa-contao"
+  },
+  {
+    "name": "500px",
+    "key": "fa fa-500px"
+  },
+  {
+    "name": "amazon",
+    "key": "fa fa-amazon"
+  },
+  {
+    "name": "industry",
+    "key": "fa fa-industry"
+  },
+  {
+    "name": "map-pin",
+    "key": "fa fa-map-pin"
+  },
+  {
+    "name": "map-signs",
+    "key": "fa fa-map-signs"
+  },
+  {
+    "name": "map-o",
+    "key": "fa fa-map-o"
+  },
+  {
+    "name": "map",
+    "key": "fa fa-map"
+  },
+  {
+    "name": "houzz",
+    "key": "fa fa-houzz"
+  },
+  {
+    "name": "vimeo",
+    "key": "fa fa-vimeo"
+  },
+  {
+    "name": "black-tie",
+    "key": "fa fa-black-tie"
+  },
+  {
+    "name": "fonticons",
+    "key": "fa fa-fonticons"
+  },
+  {
+    "name": "reddit-alien",
+    "key": "fa fa-reddit-alien"
+  },
+  {
+    "name": "codiepie",
+    "key": "fa fa-codiepie"
+  },
+  {
+    "name": "modx",
+    "key": "fa fa-modx"
+  },
+  {
+    "name": "fort-awesome",
+    "key": "fa fa-fort-awesome"
+  },
+  {
+    "name": "product-hunt",
+    "key": "fa fa-product-hunt"
+  },
+  {
+    "name": "mixcloud",
+    "key": "fa fa-mixcloud"
+  },
+  {
+    "name": "scribd",
+    "key": "fa fa-scribd"
+  },
+  {
+    "name": "hashtag",
+    "key": "fa fa-hashtag"
+  },
+  {
+    "name": "percent",
+    "key": "fa fa-percent"
+  },
+  {
+    "name": "gitlab",
+    "key": "fa fa-gitlab"
+  },
+  {
+    "name": "wpbeginner",
+    "key": "fa fa-wpbeginner"
+  },
+  {
+    "name": "wpforms",
+    "key": "fa fa-wpforms"
+  },
+  {
+    "name": "envira",
+    "key": "fa fa-envira"
+  },
+  {
+    "name": "universal-access",
+    "key": "fa fa-universal-access"
+  },
+  {
+    "name": "audio-description",
+    "key": "fa fa-audio-description"
+  },
+  {
+    "name": "volume-control-phone",
+    "key": "fa fa-volume-control-phone"
+  },
+  {
+    "name": "braille",
+    "key": "fa fa-braille"
+  },
+  {
+    "name": "assistive-listening-systems",
+    "key": "fa fa-assistive-listening-systems"
+  },
+  {
+    "name": "asl-interpreting",
+    "key": "fa fa-asl-interpreting"
+  },
+  {
+    "name": "deafness",
+    "key": "fa fa-deafness"
+  },
+  {
+    "name": "glide",
+    "key": "fa fa-glide"
+  },
+  {
+    "name": "glide-g",
+    "key": "fa fa-glide-g"
+  },
+  {
+    "name": "signing",
+    "key": "fa fa-signing"
+  },
+  {
+    "name": "low-vision",
+    "key": "fa fa-low-vision"
+  },
+  {
+    "name": "pied-piper",
+    "key": "fa fa-pied-piper"
+  },
+  {
+    "name": "first-order",
+    "key": "fa fa-first-order"
+  },
+  {
+    "name": "yoast",
+    "key": "fa fa-yoast"
+  },
+  {
+    "name": "themeisle",
+    "key": "fa fa-themeisle"
+  },
+  {
+    "name": "handshake-o",
+    "key": "fa fa-handshake-o"
+  },
+  {
+    "name": "linode",
+    "key": "fa fa-linode"
+  },
+  {
+    "name": "地址簿、电话薄",
+    "key": "fa fa-address-book"
+  },
+  {
+    "name": "地址簿、电话薄",
+    "key": "fa fa-address-book-o"
+  },
+  {
+    "name": "证件、身份证",
+    "key": "fa fa-vcard"
+  },
+  {
+    "name": "证件、身份证",
+    "key": "fa fa-vcard-o"
+  },
+  {
+    "name": "证件、工作证、工牌",
+    "key": "fa fa-id-badge"
+  },
+  {
+    "name": "证件、驾驶证、驾照",
+    "key": "fa fa-drivers-license"
+  },
+  {
+    "name": "证件、驾驶证、驾照",
+    "key": "fa fa-drivers-license-o"
+  },
+  {
+    "name": "free-code-camp",
+    "key": "fa fa-free-code-camp"
+  },
+  {
+    "name": "花洒、沐浴、洗澡",
+    "key": "fa fa-shower"
+  },
+  {
+    "name": "浴缸、沐浴、洗澡",
+    "key": "fa fa-bathtub"
+  },
+  {
+    "name": "窗口最大化",
+    "key": "fa fa-window-maximize"
+  },
+  {
+    "name": "窗口最小化",
+    "key": "fa fa-window-minimize"
+  },
+  {
+    "name": "窗口还原",
+    "key": "fa fa-window-restore"
+  },
+  {
+    "name": "窗口关闭",
+    "key": "fa fa-times-rectangle"
+  },
+  {
+    "name": "窗口关闭",
+    "key": "fa fa-times-rectangle-o"
+  },
+  {
+    "name": "grav",
+    "key": "fa fa-grav"
+  },
+  {
+    "name": "superpowers",
+    "key": "fa fa-superpowers"
+  },
+  {
+    "name": "语言、翻译",
+    "key": "fa fa-language"
+  },
+  {
+    "name": "什么鬼？",
+    "key": "fa fa-ra"
+  },
+  {
+    "name": "什么鬼？",
+    "key": "fa fa-ge"
+  }
+]
