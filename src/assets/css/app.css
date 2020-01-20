@@ -60,6 +60,13 @@ section {
   user-select: none;
 }
 
+/* page 样式 */
+.page-wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 25px calc(100% - 25px);
+}
+
 /* ------------- 修复 materialize-css 样式问题 -------------*/
 .waves-effect {
   display: block!important;

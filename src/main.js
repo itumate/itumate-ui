@@ -18,9 +18,13 @@ import router from './router';
 // Global Component
 import SliderToggle from "@/components/commons/SliderToggle";
 import PaginationHelper from "@/components/commons/PaginationHelper";
+import PageBody from "@/components/commons/PageBody";
+import PageHeader from "@/components/commons/PageHeader";
 
 Vue.component('SliderToggle', SliderToggle);
 Vue.component('PaginationHelper', PaginationHelper);
+Vue.component('PageBody', PageBody);
+Vue.component('PageHeader', PageHeader);
 
 // filter
 import {currency} from './filter/currency';
