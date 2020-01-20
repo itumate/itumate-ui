@@ -74,7 +74,7 @@
         </el-table-column>
         <el-table-column fixed="right" label="操作" >
           <template slot-scope="scope">
-            <el-button type="text" size="small">查看</el-button>
+            <router-link :to="{path: '/home/menu/1/detail'}"><el-button type="text" size="small">查看</el-button></router-link>
             <el-button type="text" size="small">编辑</el-button>
             <el-button type="text" size="small">删除</el-button>
           </template>
@@ -122,7 +122,7 @@
         this.table.innerHeight = unit * 48;
       },
       menuAdd(){
-        this.$router.push('/home/menu/1/detail');
+        this.$router.push('/home/menu/add');
       }
     },
     created(){

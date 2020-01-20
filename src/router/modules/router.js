@@ -40,6 +40,13 @@ const constantRoutes = [
           title: '菜单详情'
         },
         component: () => import('@/components/menu/MenuDetail')
+      },
+      {
+        path: 'menu/add',
+        meta: {
+          title: '新增菜单'
+        },
+        component: () => import('@/components/menu/MenuAdd')
       }
     ]
   }

@@ -8,15 +8,19 @@
 
 <script>
 
-
     export default {
         name: 'MenuDetail',
         components: {},
+        data() {
+            return {}
+        },
+        methods: {},
         created() {
+        },
+        mounted() {
         }
     }
 </script>
 
 <style scoped>
-
 </style>
