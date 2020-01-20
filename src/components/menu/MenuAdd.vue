@@ -1,114 +1,113 @@
 <template>
-  <div class="page-wrapper">
-    <page-header goBackPath="/home/menu"></page-header>
-    <page-body>
-      <el-row :gutter="15">
-        <el-form ref="elForm" :model="formData" :rules="rules" size="medium" label-width="100px">
-          <el-col :span="24">
-            <el-form-item label="菜单名称" prop="label">
-              <el-input v-model="formData.label" placeholder="请输入菜单名称" show-word-limit clearable
-                        prefix-icon='el-icon-menu' :style="{width: '100%'}"></el-input>
-            </el-form-item>
-          </el-col>
-          <el-col :span="12">
-            <el-form-item label="版本号" prop="recover">
-              <el-input-number v-model="formData.recover" placeholder="版本号"
-                               :precision="2" :step="0.1" :min="0.01"
-                               :style="{width: '100%'}"></el-input-number>
-            </el-form-item>
-          </el-col>
-          <el-col :span="12">
-            <el-form-item label="权限码" prop="authorityCode">
-              <el-input v-model="formData.authorityCode" placeholder="请输入权限码" clearable prefix-icon='fa fa-codepen'
-                        :style="{width: '100%'}"></el-input>
-            </el-form-item>
-          </el-col>
-          <el-col :span="12">
-            <el-form-item label="icon来源" prop="iconFrom">
-              <el-select v-model="formData.iconFrom" placeholder="请选择菜单icon来源" clearable :style="{width: '100%'}">
-                <el-option v-for="(item, index) in iconFromOptions" :key="index" :label="item.label"
-                           :value="item.value" :disabled="item.disabled"></el-option>
-              </el-select>
-            </el-form-item>
-          </el-col>
-          <el-col :span="12">
-            <el-form-item label="icon样式" prop="iconClass">
-              <el-input v-model="formData.iconClass" placeholder="请输入icon样式Class" readonly="" prefix-icon='fa fa-bars'
-                        :style="{width: '100%'}">
-                <el-button icon="el-icon-thumb" @click="openIconsDialog" slot="append">选择</el-button>
-              </el-input>
-            </el-form-item>
+  <el-container style="max-height: 70vh;">
+    <el-row :gutter="15">
+      <el-form ref="elForm" :model="formData" :rules="rules" size="medium" label-width="100px">
+        <el-col :span="24">
+          <el-form-item label="菜单名称" prop="label">
+            <el-input v-model="formData.label" placeholder="请输入菜单名称" show-word-limit clearable
+                      prefix-icon='el-icon-menu' :style="{width: '100%'}"></el-input>
+          </el-form-item>
+        </el-col>
+        <el-col :span="12">
+          <el-form-item label="版本号" prop="recover">
+            <el-input-number v-model="formData.recover" placeholder="版本号"
+                             :precision="2" :step="0.1" :min="0.01"
+                             :style="{width: '100%'}"></el-input-number>
+          </el-form-item>
+        </el-col>
+        <el-col :span="12">
+          <el-form-item label="权限码" prop="authorityCode">
+            <el-input v-model="formData.authorityCode" placeholder="请输入权限码" clearable prefix-icon='fa fa-codepen'
+                      :style="{width: '100%'}"></el-input>
+          </el-form-item>
+        </el-col>
+        <el-col :span="12">
+          <el-form-item label="icon来源" prop="iconFrom">
+            <el-select v-model="formData.iconFrom" placeholder="请选择菜单icon来源" clearable :style="{width: '100%'}">
+              <el-option v-for="(item, index) in iconFromOptions" :key="index" :label="item.label"
+                         :value="item.value" :disabled="item.disabled"></el-option>
+            </el-select>
+          </el-form-item>
+        </el-col>
+        <el-col :span="12">
+          <el-form-item label="icon样式" prop="iconClass">
+            <el-input v-model="formData.iconClass" placeholder="请输入icon样式Class" readonly="" prefix-icon='fa fa-bars'
+                      :style="{width: '100%'}">
+              <el-button icon="el-icon-thumb" @click="openIconsDialog" slot="append">选择</el-button>
+            </el-input>
+          </el-form-item>
 
-          </el-col>
-          <el-col :span="12">
-            <el-form-item label="菜单类型" prop="isLeaf">
-              <el-select v-model="formData.isLeaf" placeholder="请选择菜单类型" clearable :style="{width: '100%'}">
-                <el-option v-for="(item, index) in isLeafOptions" :key="index" :label="item.label"
-                           :value="item.value" :disabled="item.disabled"></el-option>
-              </el-select>
-            </el-form-item>
-          </el-col>
-          <el-col :span="12">
-            <el-form-item label="菜单状态" prop="status">
-              <el-select v-model="formData.status" placeholder="请选择菜单状态" clearable :style="{width: '100%'}">
-                <el-option v-for="(item, index) in statusOptions" :key="index" :label="item.label"
-                           :value="item.value" :disabled="item.disabled"></el-option>
-              </el-select>
-            </el-form-item>
-          </el-col>
-          <el-col :span="24">
-            <el-form-item label="父级菜单" prop="parents">
-              <el-cascader v-model="formData.parents" :options="parentsOptions" filterable
-                           :style="{width: '100%'}" placeholder="请选择父级菜单" clearable
-                           :props="parentsProps"></el-cascader>
-            </el-form-item>
-          </el-col>
-          <slider-toggle>
-            <el-col :span="24" v-show="formData.isLeaf">
-              <el-form-item label="菜单URL" prop="funUrl">
-                <el-input v-model="formData.funUrl" placeholder="请输入菜单URL" clearable prefix-icon='fa fa-chain'
-                          :style="{width: '100%'}"></el-input>
-              </el-form-item>
-            </el-col>
-          </slider-toggle>
-          <el-col :span="12">
-            <el-form-item label="创建时间" prop="createTime">
-              <el-date-picker type="datetime" v-model="formData.createTime" format="yyyy-MM-dd HH:mm:ss"
-                              value-format="yyyy-MM-dd HH:mm:ss" :style="{width: '100%'}" placeholder="请选择创建时间" clearable
-                              readonly></el-date-picker>
-            </el-form-item>
-          </el-col>
-          <el-col :span="12">
-            <el-form-item label="修改时间" prop="modifyTime">
-              <el-date-picker type="datetime" v-model="formData.modifyTime" format="yyyy-MM-dd HH:mm:ss"
-                              value-format="yyyy-MM-dd HH:mm:ss" :style="{width: '100%'}" placeholder="请选择修改时间" clearable
-                              readonly></el-date-picker>
-            </el-form-item>
-          </el-col>
-          <el-col :span="24">
-            <el-form-item label="备注信息" prop="remark">
-              <el-input v-model="formData.remark" placeholder="请输入备注信息" clearable prefix-icon='el-icon-question'
+        </el-col>
+        <el-col :span="12">
+          <el-form-item label="菜单类型" prop="isLeaf">
+            <el-select v-model="formData.isLeaf" placeholder="请选择菜单类型" clearable :style="{width: '100%'}">
+              <el-option v-for="(item, index) in isLeafOptions" :key="index" :label="item.label"
+                         :value="item.value" :disabled="item.disabled"></el-option>
+            </el-select>
+          </el-form-item>
+        </el-col>
+        <el-col :span="12">
+          <el-form-item label="菜单状态" prop="status">
+            <el-select v-model="formData.status" placeholder="请选择菜单状态" clearable :style="{width: '100%'}">
+              <el-option v-for="(item, index) in statusOptions" :key="index" :label="item.label"
+                         :value="item.value" :disabled="item.disabled"></el-option>
+            </el-select>
+          </el-form-item>
+        </el-col>
+        <el-col :span="24">
+          <el-form-item label="父级菜单" prop="parents">
+            <el-cascader v-model="formData.parents" :options="parentsOptions" filterable
+                         :style="{width: '100%'}" placeholder="请选择父级菜单" clearable
+                         :props="parentsProps"></el-cascader>
+          </el-form-item>
+        </el-col>
+        <slider-toggle>
+          <el-col :span="24" v-show="formData.isLeaf">
+            <el-form-item label="菜单URL" prop="funUrl">
+              <el-input v-model="formData.funUrl" placeholder="请输入菜单URL" clearable prefix-icon='fa fa-chain'
                         :style="{width: '100%'}"></el-input>
             </el-form-item>
           </el-col>
-          <el-col :span="24">
-            <el-form-item label="描述信息" prop="description">
-              <el-input v-model="formData.description" type="textarea" placeholder="请输入描述信息"
-                        :autosize="{minRows: 4, maxRows: 4}" :style="{width: '100%'}"></el-input>
-            </el-form-item>
-          </el-col>
-          <el-col :span="24">
-            <el-form-item size="large">
-              <el-button type="primary" @click="submitForm">提交</el-button>
-              <el-button @click="resetForm">重置</el-button>
-            </el-form-item>
-          </el-col>
-        </el-form>
-      </el-row>
-      <element-icons-dialog :visible.sync="elementIconVisible" @select="setIcon" :current="formData.iconClass"/>
-      <font-awesome-icons-dialog :visible.sync="fontAwesomeIconVisible" @select="setIcon" :current="formData.iconClass"></font-awesome-icons-dialog>
-    </page-body>
-  </div>
+        </slider-toggle>
+        <el-col :span="12">
+          <el-form-item label="创建时间" prop="createTime">
+            <el-date-picker type="datetime" v-model="formData.createTime" format="yyyy-MM-dd HH:mm:ss"
+                            value-format="yyyy-MM-dd HH:mm:ss" :style="{width: '100%'}" placeholder="请选择创建时间" clearable
+                            readonly></el-date-picker>
+          </el-form-item>
+        </el-col>
+        <el-col :span="12">
+          <el-form-item label="修改时间" prop="modifyTime">
+            <el-date-picker type="datetime" v-model="formData.modifyTime" format="yyyy-MM-dd HH:mm:ss"
+                            value-format="yyyy-MM-dd HH:mm:ss" :style="{width: '100%'}" placeholder="请选择修改时间" clearable
+                            readonly></el-date-picker>
+          </el-form-item>
+        </el-col>
+        <el-col :span="24">
+          <el-form-item label="备注信息" prop="remark">
+            <el-input v-model="formData.remark" placeholder="请输入备注信息" clearable prefix-icon='el-icon-question'
+                      :style="{width: '100%'}"></el-input>
+          </el-form-item>
+        </el-col>
+        <el-col :span="24">
+          <el-form-item label="描述信息" prop="description">
+            <el-input v-model="formData.description" type="textarea" placeholder="请输入描述信息"
+                      :autosize="{minRows: 4, maxRows: 4}" :style="{width: '100%'}"></el-input>
+          </el-form-item>
+        </el-col>
+
+        <el-col :span="24">
+          <el-form-item size="large">
+            <el-button type="danger" plain @click="closeDialog" icon="el-icon-close">关闭</el-button>
+            <el-button type="primary" @click="submitForm" icon="el-icon-check">提交</el-button>
+            <el-button type="warning" plain @click="resetForm" icon="el-icon-refresh-left">重置</el-button>
+          </el-form-item>
+        </el-col>
+      </el-form>
+    </el-row>
+    <element-icons-dialog :modal="false" :visible.sync="elementIconVisible" @select="setIcon" :current="formData.iconClass"/>
+    <font-awesome-icons-dialog :modal="false" :visible.sync="fontAwesomeIconVisible" @select="setIcon" :current="formData.iconClass"></font-awesome-icons-dialog>
+  </el-container>
 </template>
 
 <script>
@@ -238,6 +237,9 @@
             }
         },
         methods: {
+            closeDialog() {
+                this.$emit('closeDialog', true);
+            },
             submitForm() {
                 this.$refs['elForm'].validate(valid => {
                     if (!valid) return;
@@ -263,13 +265,16 @@
                     this.fontAwesomeIconVisible = true;
                 }
             },
-            setIcon(val) {
-                if (this.formData.iconFrom === 'ElementUI'){
-                    this.elementIconVisible = true;
+            setIcon(iconClass) {
+               /* if (this.formData.iconFrom === 'ElementUI'){
+                    this.elementIconVisible = false;
                 } else { // FontAwesome
-                    this.fontAwesomeIconVisible = true;
-                }
-                this.formData.iconClass = val;
+                  this.elementIconVisible = false;
+                    this.fontAwesomeIconVisible = false;
+                }*/
+                this.elementIconVisible = false;
+                this.fontAwesomeIconVisible = false;
+                this.formData.iconClass = iconClass;
             }
         },
         watch:{

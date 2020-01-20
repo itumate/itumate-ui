@@ -1,7 +1,5 @@
 <template>
-  <div class="page-wrapper page-detail">
-    <page-header goBackPath="/home/menu"></page-header>
-    <page-body>
+  <el-container style="max-height: 70vh;">
       <el-row :gutter="15">
         <el-form ref="elForm" :model="formData" size="medium" label-width="100px">
           <el-col :span="24">
@@ -69,15 +67,14 @@
                         :autosize="{minRows: 4, maxRows: 4}" :style="{width: '100%'}"></el-input>
             </el-form-item>
           </el-col>
-          <el-col :span="24">
+          <!--<el-col :span="24">
             <el-form-item size="large">
                 <el-button type="primary" @click="goBack" icon="fa fa-reply">返回</el-button>
             </el-form-item>
-          </el-col>
+          </el-col>-->
         </el-form>
       </el-row>
-    </page-body>
-  </div>
+  </el-container>
 </template>
 <script>
 
@@ -103,9 +100,6 @@
             }
         },
         methods:{
-          goBack(){
-              this.$router.push('/home/menu');
-          }
         },
         created() {
         }

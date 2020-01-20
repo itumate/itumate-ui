@@ -74,7 +74,7 @@
         </el-table-column>
         <el-table-column fixed="right" label="操作" >
           <template slot-scope="scope">
-            <router-link :to="{path: '/home/menu/1/detail'}"><el-button type="text" size="small">查看</el-button></router-link>
+            <el-button type="text" size="small" @click="menuDetail">查看</el-button>
             <el-button type="text" size="small">编辑</el-button>
             <el-button type="text" size="small">删除</el-button>
           </template>
@@ -87,6 +87,13 @@
         :pageSize="10"
         :showAllLayout="true" />
     </el-main>
+
+    <el-dialog title="新增菜单" destroy-on-close :visible.sync="menuAddDialogVisible" :close-on-click-modal="false" :close-on-press-escape="false">
+      <menu-add @closeDialog="closeMenuAddDialog"></menu-add>
+    </el-dialog>
+    <el-dialog title="菜单详情" destroy-on-close :visible.sync="menuDetailDialogVisible">
+      <menu-detail></menu-detail>
+    </el-dialog>
   </el-container>
 </template>
 
@@ -95,13 +102,18 @@
   import Tree from "./../tree/Tree";
   import MoreConditionDivider from "../commons/MoreConditionDivider";
 
+  import MenuAdd from "./MenuAdd";
+  import MenuDetail from "./MenuDetail";
+
   import MenuData from "../../../demo/MenuData";
 
   export default {
     name: 'MenuList',
     components: {
       MoreConditionDivider,
-      Tree
+      Tree,
+      MenuAdd,
+      MenuDetail
     },
     methods: {
       submitForm() {
@@ -122,7 +134,13 @@
         this.table.innerHeight = unit * 48;
       },
       menuAdd(){
-        this.$router.push('/home/menu/add');
+        this.menuAddDialogVisible = true;
+      },
+      menuDetail(){
+        this.menuDetailDialogVisible = true;
+      },
+      closeMenuAddDialog(closed){
+          this.menuAddDialogVisible = !closed;
       }
     },
     created(){
@@ -140,6 +158,8 @@
     },
     data(){
       return{
+        menuAddDialogVisible: false,
+        menuDetailDialogVisible: false,
         table: {
           innerHeight: 0,
         },

@@ -31,7 +31,7 @@
 -->
 <template>
   <div class="icon-dialog">
-    <el-dialog v-bind="$attrs" v-on="$listeners" @open="onOpen" @close="onClose" width="980px" :modal-append-to-body="false">
+    <el-dialog v-bind="$attrs" v-on="$listeners" @open="onOpen" @close="onClose" :modal="modalChecked">
       <div slot="title">
         选择图标
         <el-input size="mini" :style="{width: '260px'}" v-model="key" placeholder="请输入图标名称" prefix-icon='el-icon-search' clearable></el-input>
@@ -54,7 +54,16 @@
     export default {
         name: 'FontAwesomeIconsDialog',
         inheritAttrs: false,
-        props: ['current'],
+        props: {
+          current: {
+            required: false,
+            type: String
+          },
+          modal: {
+            required: false,
+            type: Boolean
+          }
+        },
         data() {
             return {
                 icons: fontAwesomeIcons,
@@ -77,13 +86,22 @@
                 this.key = ''
             },
             onClose() {
+                this.$emit('update:visible', false)
             },
             onSelect(icon) {
                 this.active = icon;
                 this.$emit('select', icon);
                 this.$emit('update:visible', false)
             }
-        }
+        },
+        computed: {
+          modalChecked(){
+            if (this.modal === undefined){
+              return true;
+            }
+            return this.modal;
+          }
+        },
     }
 </script>
 
