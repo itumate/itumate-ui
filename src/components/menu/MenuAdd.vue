@@ -1,5 +1,5 @@
 <template>
-  <el-container style="max-height: 70vh;">
+  <el-container class="dialog-container">
     <el-row :gutter="15">
       <el-form ref="elForm" :model="formData" :rules="rules" size="medium" label-width="100px">
         <el-col :span="24">
@@ -16,9 +16,11 @@
           </el-form-item>
         </el-col>
         <el-col :span="12">
-          <el-form-item label="权限码" prop="authorityCode">
-            <el-input v-model="formData.authorityCode" placeholder="请输入权限码" clearable prefix-icon='fa fa-codepen'
-                      :style="{width: '100%'}"></el-input>
+          <el-form-item label="排序" prop="sort">
+            <el-select v-model="formData.sort" placeholder="请选择排序方式" clearable :style="{width: '100%'}">
+              <el-option label="最前" value="ASC"></el-option>
+              <el-option label="最后" value="DESC"></el-option>
+            </el-select>
           </el-form-item>
         </el-col>
         <el-col :span="12">
@@ -69,20 +71,6 @@
             </el-form-item>
           </el-col>
         </slider-toggle>
-        <el-col :span="12">
-          <el-form-item label="创建时间" prop="createTime">
-            <el-date-picker type="datetime" v-model="formData.createTime" format="yyyy-MM-dd HH:mm:ss"
-                            value-format="yyyy-MM-dd HH:mm:ss" :style="{width: '100%'}" placeholder="请选择创建时间" clearable
-                            readonly></el-date-picker>
-          </el-form-item>
-        </el-col>
-        <el-col :span="12">
-          <el-form-item label="修改时间" prop="modifyTime">
-            <el-date-picker type="datetime" v-model="formData.modifyTime" format="yyyy-MM-dd HH:mm:ss"
-                            value-format="yyyy-MM-dd HH:mm:ss" :style="{width: '100%'}" placeholder="请选择修改时间" clearable
-                            readonly></el-date-picker>
-          </el-form-item>
-        </el-col>
         <el-col :span="24">
           <el-form-item label="备注信息" prop="remark">
             <el-input v-model="formData.remark" placeholder="请输入备注信息" clearable prefix-icon='el-icon-question'
@@ -128,15 +116,13 @@
                 formData: {
                     label: '',
                     recover: 0.01,
-                    authorityCode: undefined,
+                    sort: undefined,
                     iconFrom: undefined,
                     iconClass: undefined,
                     isLeaf: undefined,
                     status: undefined,
                     parents: [1, 11],
                     funUrl: undefined,
-                    createTime: '2020-01-20 11:04:06',
-                    modifyTime: '2020-01-20 11:05:33',
                     remark: undefined,
                     description: undefined,
                 },
@@ -155,9 +141,9 @@
                         message: '请输入版本号',
                         trigger: 'blur'
                     }],
-                    authorityCode: [{
+                    sort: [{
                         required: true,
-                        message: '请输入权限码',
+                        message: '请选择排序方式',
                         trigger: 'blur'
                     }],
                     iconFrom: [{
@@ -187,8 +173,6 @@
                         trigger: 'change'
                     }],
                     funUrl: [],
-                    createTime: [],
-                    modifyTime: [],
                     remark: [],
                     description: []
                 },

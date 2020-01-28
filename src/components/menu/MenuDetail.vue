@@ -10,12 +10,12 @@
           </el-col>
           <el-col :span="12">
             <el-form-item label="版本号" prop="recover">
-              <el-input v-model="formData.recover" readonly></el-input>
+              <el-input v-model="formData.recover" readonly prefix-icon="fa fa-codepen"></el-input>
             </el-form-item>
           </el-col>
           <el-col :span="12">
-            <el-form-item label="权限码" prop="authorityCode">
-              <el-input v-model="formData.authorityCode" readonly prefix-icon='fa fa-codepen'></el-input>
+            <el-form-item label="排序方式" prop="sort">
+              <el-input v-model="formData.sort" readonly prefix-icon='el-icon-sort'></el-input>
             </el-form-item>
           </el-col>
           <el-col :span="12">
@@ -56,6 +56,16 @@
                               value-format="yyyy-MM-dd HH:mm:ss" readonly :style="{width: '100%'}"></el-date-picker>
             </el-form-item>
           </el-col>
+          <el-col :span="12">
+            <el-form-item label="创建用户" prop="createUser">
+              <el-input v-model="formData.createUser" readonly prefix-icon='fa fa-user'></el-input>
+            </el-form-item>
+          </el-col>
+          <el-col :span="12">
+            <el-form-item label="修改用户" prop="createUser">
+              <el-input v-model="formData.modifyUser" readonly prefix-icon='fa fa-user'></el-input>
+            </el-form-item>
+          </el-col>
           <el-col :span="24">
             <el-form-item label="备注信息" prop="remark">
               <el-input v-model="formData.remark" readonly prefix-icon='fa fa-paint-brush'></el-input>
@@ -86,7 +96,7 @@
                 formData: {
                     label: '',
                     recover: 0,
-                    authorityCode: undefined,
+                    sort: undefined,
                     iconFrom: 'ElementUI',
                     iconClass: undefined,
                     isLeaf: 0,
@@ -94,6 +104,8 @@
                     funUrl: undefined,
                     createTime: '2020-01-20 11:04:06',
                     modifyTime: '2020-01-20 11:05:33',
+                    createUser: '',
+                    modifyUser: '',
                     remark: undefined,
                     description: undefined,
                 }

@@ -59,8 +59,16 @@
         </el-form>
       </el-row>
 
-      <el-table :data="tableData" :height="table.innerHeight" header-row-class-name="header-row" >
-        <el-table-column type="index" width="50"></el-table-column>
+      <el-table tooltip-effect="dark"
+                :data="tableData"
+                :height="table.innerHeight"
+                current-row-key="id"
+                @select="select"
+                @select-all="selectAll"
+                header-row-class-name="header-row"
+                highlight-current-row>
+        <el-table-column type="selection" width="55"></el-table-column>
+        <el-table-column type="index" width="50" label="key"></el-table-column>
         <el-table-column prop="label" label="菜单名称"></el-table-column>
         <el-table-column prop="date" label="创建日期"></el-table-column>
         <el-table-column prop="parentLabel" label="父级菜单"></el-table-column>
@@ -88,9 +96,9 @@
         :showAllLayout="true" />
     </el-main>
 
-    <el-dialog title="新增菜单" destroy-on-close :visible.sync="menuAddDialogVisible" :close-on-click-modal="false" :close-on-press-escape="false">
-      <menu-add @closeDialog="closeMenuAddDialog"></menu-add>
-    </el-dialog>
+      <el-dialog custom-class="dialog" title="新增菜单" destroy-on-close :visible.sync="menuAddDialogVisible" :close-on-click-modal="false" :close-on-press-escape="false">
+        <menu-add @closeDialog="closeMenuAddDialog"></menu-add>
+      </el-dialog>
     <el-dialog title="菜单详情" destroy-on-close :visible.sync="menuDetailDialogVisible">
       <menu-detail></menu-detail>
     </el-dialog>
@@ -141,7 +149,13 @@
       },
       closeMenuAddDialog(closed){
           this.menuAddDialogVisible = !closed;
-      }
+      },
+        select(selection, row){
+            console.log('select', selection, row);
+        },
+        selectAll(selection){
+            console.log('select all', selection);
+        }
     },
     created(){
       this.resizeScreen();
@@ -179,5 +193,4 @@
 </script>
 
 <style scoped>
-
 </style>

@@ -1,136 +1,159 @@
 const tableData = [{
+  id: Math.random(),
   date: '2016-05-03',
   label: '系统设置',
   parentLabel: '-',
   status: 1,
   statusLabel: '启用'
 }, {
+  id: Math.random(),
   date: '2016-05-02',
   label: '菜单管理',
   parentLabel: '系统设置',
   status: 2,
   statusLabel: '禁用'
 }, {
+  id: Math.random(),
   date: '2016-05-04',
   label: '用户管理',
   parentLabel: '系统设置',
   status: 1,
   statusLabel: '启用'
 }, {
+  id: Math.random(),
   date: '2016-05-04',
   label: '示例菜单',
   parentLabel: '示例菜单',
   status: 1,
   statusLabel: '启用'
 }, {
+  id: Math.random(),
   date: '2016-05-04',
   label: '示例菜单',
   parentLabel: '示例菜单',
   status: 1,
   statusLabel: '启用'
 }, {
+  id: Math.random(),
   date: '2016-05-04',
   label: '示例菜单',
   parentLabel: '示例菜单',
   status: 1,
   statusLabel: '启用'
 }, {
+  id: Math.random(),
   date: '2016-05-04',
   label: '示例菜单',
   parentLabel: '示例菜单',
   status: 1,
   statusLabel: '启用'
 }, {
+  id: Math.random(),
   date: '2016-05-04',
   label: '示例菜单',
   parentLabel: '示例菜单',
   status: 1,
   statusLabel: '启用'
 }, {
+  id: Math.random(),
   date: '2016-05-04',
   label: '示例菜单',
   parentLabel: '示例菜单',
   status: 1,
   statusLabel: '启用'
 }, {
+  id: Math.random(),
   date: '2016-05-04',
   label: '示例菜单',
   parentLabel: '示例菜单',
   status: 1,
   statusLabel: '启用'
 }, {
+  id: Math.random(),
   date: '2016-05-04',
   label: '示例菜单',
   parentLabel: '示例菜单',
   status: 1,
   statusLabel: '启用'
 }, {
+  id: Math.random(),
   date: '2016-05-04',
   label: '示例菜单',
   parentLabel: '示例菜单',
   status: 1,
   statusLabel: '启用'
 }, {
+  id: Math.random(),
   date: '2016-05-04',
   label: '示例菜单',
   parentLabel: '示例菜单',
   status: 1,
   statusLabel: '启用'
 }, {
+  id: Math.random(),
   date: '2016-05-04',
   label: '示例菜单',
   parentLabel: '示例菜单',
   status: 1,
   statusLabel: '启用'
 }, {
+  id: Math.random(),
   date: '2016-05-04',
   label: '示例菜单',
   parentLabel: '示例菜单',
   status: 1,
   statusLabel: '启用'
 }, {
+  id: Math.random(),
   date: '2016-05-04',
   label: '示例菜单',
   parentLabel: '示例菜单',
   status: 1,
   statusLabel: '启用'
 }, {
+  id: Math.random(),
   date: '2016-05-04',
   label: '示例菜单',
   parentLabel: '示例菜单',
   status: 1,
   statusLabel: '启用'
 }, {
+  id: Math.random(),
   date: '2016-05-04',
   label: '示例菜单',
   parentLabel: '示例菜单',
   status: 1,
   statusLabel: '启用'
 }, {
+  id: Math.random(),
   date: '2016-05-04',
   label: '示例菜单',
   parentLabel: '示例菜单',
   status: 1,
   statusLabel: '启用'
 }, {
+  id: Math.random(),
   date: '2016-05-04',
   label: '示例菜单',
   parentLabel: '示例菜单',
   status: 1,
   statusLabel: '启用'
 }, {
+  id: Math.random(),
   date: '2016-05-04',
   label: '示例菜单',
   parentLabel: '示例菜单',
   status: 1,
   statusLabel: '启用'
 }, {
+  id: Math.random(),
   date: '2016-05-04',
   label: '示例菜单',
   parentLabel: '示例菜单',
   status: 1,
   statusLabel: '启用'
 }, {
+  id: Math.random(),
   date: '2016-05-04',
   label: '示例菜单',
   parentLabel: '示例菜单',
