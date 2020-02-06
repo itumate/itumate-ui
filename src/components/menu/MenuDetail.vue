@@ -1,5 +1,5 @@
 <template>
-  <el-container style="max-height: 70vh;">
+  <el-container class="dialog-container">
       <el-row :gutter="15">
         <el-form ref="elForm" :model="formData" size="medium" label-width="100px">
           <el-col :span="24">
