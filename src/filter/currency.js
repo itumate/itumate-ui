@@ -1,5 +1,6 @@
 /**
  * 货币转化过滤器
+ * <a href="https://github.com/vuejs/vuex/blob/dev/examples/shopping-cart/currency.js"></a>
  * <pre>
  *    import { currency } from './currency';
  *

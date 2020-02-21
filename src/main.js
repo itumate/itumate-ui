@@ -16,18 +16,14 @@ import App from './App';
 import router from './router';
 
 // Global Component
-import SliderToggle from "@/components/commons/SliderToggle";
-import PaginationHelper from "@/components/commons/PaginationHelper";
-import PageBody from "@/components/commons/PageBody";
-import PageHeader from "@/components/commons/PageHeader";
+import commons from '@/components/commons';
+Vue.use(commons);
 
-Vue.component('SliderToggle', SliderToggle);
-Vue.component('PaginationHelper', PaginationHelper);
-Vue.component('PageBody', PageBody);
-Vue.component('PageHeader', PageHeader);
-
-// filter
-import {currency} from './filter/currency';
+// filter and directive
+import filter from '@/filter';
+import directive from "@/directive";
+Vue.use(filter);
+Vue.use(directive);
 
 Vue.config.productionTip = false;
 
@@ -37,8 +33,6 @@ Vue.use(VueInsProgressBar, {
   show: true,
   height: '5px'
 });
-
-Vue.filter('currency', currency);
 
 new Vue({
   el: '#app',
