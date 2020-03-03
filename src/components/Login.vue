@@ -173,17 +173,12 @@
             },
             virtualLogin(){
                 /* 模拟登录 */
-                this.$message({
-                    center: true,
-                    showClose: true,
-                    message: '正在请求登录...'
+                this.$notify({
+                    title: '正在请求登录...'
                 });
                 setTimeout(() => {
-                    this.$message({
-                        center: true,
-                        showClose: true,
-                        message: '登录成功',
-                        type: 'success'
+                    this.$notify.success({
+                      title: '登录成功'
                     });
                     this.$router.push('/home')
                 }, 3000);

@@ -37,6 +37,8 @@
       ref="tree"
       node-key="id"
       class="tree scroll-bar"
+      highlight-current
+      :expand-on-click-node="false"
       :lazy="lazy"
       :data="treeNodes"
       :load="loadTreeNode"
@@ -48,10 +50,10 @@
       :filter-node-method="filterNode">
 
       <!-- 自定义节点及样式 -->
-      <span class="custom-tree-node" slot-scope="{ node, data }" @click.right.prevent="mouseRightClick(data)">
+      <span class="custom-tree-node" slot-scope="{ node, data }" >
         <i v-if="data.icon.isElement" :class="data.icon.class"></i>
         <i v-else class="fa fa-fw" :class="data.icon.class"></i>
-        <span>{{ node.label }}</span>
+        <span @dblclick="mouseDbClick(data)">{{ node.label }}</span>
       </span>
 
     </el-tree>
@@ -138,9 +140,10 @@
             getCheckedKeys() {
                 return this.$refs.tree.getCheckedKeys();
             },
-            /* tree节点鼠标右键 */
-            mouseRightClick(data){
-                this.$emit('treeMouseRightClick', data);
+            /* tree节点鼠标双击事件 */
+            mouseDbClick(data){
+                console.log(data);
+                this.$emit('treeDbClick', data);
             },
             errMessage(msg) {
                 this.$message({
