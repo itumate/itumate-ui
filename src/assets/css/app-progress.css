@@ -6,7 +6,7 @@
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
 .progress {
-  position: relative;
+  position: absolute;
   height: 5px;
   display: block;
   width: 100%;
